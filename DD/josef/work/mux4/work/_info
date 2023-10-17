@@ -1,0 +1,80 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/sf_Sync/DD/josef/work/mux4
+Emux4
+Z1 w1697544138
+R0
+Z2 8/media/sf_Sync/DD/josef/work/mux4/mux4.vhd
+Z3 F/media/sf_Sync/DD/josef/work/mux4/mux4.vhd
+l0
+L1
+V4Y<FOi4@4>YCAGLnaXVSZ2
+!s100 bbS`KXjhkoho0H34o_SQ@1
+Z4 OL;C;10.6c;65
+32
+Z5 !s110 1697554654
+!i10b 1
+Z6 !s108 1697554654.000000
+Z7 !s90 -reportprogress|300|-work|work|/media/sf_Sync/DD/josef/work/mux4/mux4.vhd|
+Z8 !s107 /media/sf_Sync/DD/josef/work/mux4/mux4.vhd|
+!i113 0
+Z9 o-work work
+Z10 tExplicit 1 CvgOpt 0
+Abehav
+DEx4 work 4 mux4 0 22 4Y<FOi4@4>YCAGLnaXVSZ2
+32
+R5
+l9
+L7
+VH=8giLA3N[?L<nYMXP@iN1
+!s100 GJdG;ag4[UCI80@jGoG7Q1
+R4
+!i10b 1
+R6
+R7
+R8
+!i113 0
+R9
+R10
+Etb_mux4
+R1
+R0
+Z11 8/media/sf_Sync/DD/josef/work/mux4/tb_mux4.vhd
+Z12 F/media/sf_Sync/DD/josef/work/mux4/tb_mux4.vhd
+l0
+L1
+Va?cVzkD<`A?ZFjhR3Z]=]0
+!s100 :8M4bId>7]82HNXG@3O0V2
+R4
+32
+R5
+!i10b 1
+R6
+Z13 !s90 -reportprogress|300|-work|work|/media/sf_Sync/DD/josef/work/mux4/tb_mux4.vhd|
+Z14 !s107 /media/sf_Sync/DD/josef/work/mux4/tb_mux4.vhd|
+!i113 0
+R9
+R10
+Atestbench
+DEx4 work 7 tb_mux4 0 22 a?cVzkD<`A?ZFjhR3Z]=]0
+32
+R5
+l14
+L4
+VNI1VMTIc_8j<EC_d04l060
+!s100 4YG7ajkF^3FFZ:14C8=R61
+R4
+!i10b 1
+R6
+R13
+R14
+!i113 0
+R9
+R10
