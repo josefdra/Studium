@@ -1,0 +1,12 @@
+pwd
+ls
+ls -la
+mkdir
+cd tut_intro
+cd ..
+mv tut_intro tut_intro01
+cp /home/user/test.txt /tmp/
+cp -r /home/user/ /tmp/
+rm folder
+rm -r folder
+rm -ar folder
