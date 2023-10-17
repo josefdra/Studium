@@ -1,0 +1,42 @@
+Übung 1
+
+	Aufgabe 1
+		a)Licht
+		b)Hand
+		c)Auge
+		d)Raum
+		
+	Aufgabe 2
+		a)Elektr. Strom
+		b)Kehlkopf-->Hörer
+		c)Hörer-->Ohr
+		d)Kupferkabel
+		
+	Aufgabe 3
+		a)1000 Kibit/s
+		b)3.355.443,2 bit/s
+		c)1 MiB/s = 1.048.576 bit/s < 4.000.000 bit/s
+		
+	Aufgabe 4
+		Datenmenge pro Fahrt: 	8.704.000 Gbytes
+								= 6,9632e+16 Bit
+		Zeit: 36.000 s
+		a)1.934.222.222.222,222 bit/s > 16.000.000 bit/s
+		b)Daten werden müssen alle auf einmal "abfahrtsbereit" sein 
+		  und dann müssen alle Daten gleichzeitig angenommen werden können
+		  
+	Aufgabe 5
+		1.179.648.000 bit/s
+		
+	Aufgabe 6
+		266,33 Mikrosekunden
+		
+	Aufgabe 7
+		a)55,5555556 --> 55
+		b)5.555,55556 --> 5.555
+		c)5.555.555,56 --> 5.555.555
+		
+	Aufgabe 8
+		a)0,10850694453125 --> 0
+		b)10,850694453125 --> 10
+		c)10.850,694453125 --> 10.850
