@@ -7,23 +7,23 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/media/sf_Sync/DD/josef/work/mux4
+d/media/sf_Sync/DD/josef/work/mux4
 Emux4
-Z1 w1697544138
-R0
-Z2 8/media/sf_Sync/DD/josef/work/mux4/mux4.vhd
-Z3 F/media/sf_Sync/DD/josef/work/mux4/mux4.vhd
+Z0 w1698058481
+Z1 d/media/sf_1data/sync/sync/DD/josef/work/mux4
+Z2 8/media/sf_1data/sync/sync/DD/josef/work/mux4/mux4.vhd
+Z3 F/media/sf_1data/sync/sync/DD/josef/work/mux4/mux4.vhd
 l0
 L1
 V4Y<FOi4@4>YCAGLnaXVSZ2
 !s100 bbS`KXjhkoho0H34o_SQ@1
 Z4 OL;C;10.6c;65
 32
-Z5 !s110 1697554654
+Z5 !s110 1698138485
 !i10b 1
-Z6 !s108 1697554654.000000
-Z7 !s90 -reportprogress|300|-work|work|/media/sf_Sync/DD/josef/work/mux4/mux4.vhd|
-Z8 !s107 /media/sf_Sync/DD/josef/work/mux4/mux4.vhd|
+Z6 !s108 1698138484.000000
+Z7 !s90 -reportprogress|300|-work|work|/media/sf_1data/sync/sync/DD/josef/work/mux4/mux4.vhd|
+Z8 !s107 /media/sf_1data/sync/sync/DD/josef/work/mux4/mux4.vhd|
 !i113 0
 Z9 o-work work
 Z10 tExplicit 1 CvgOpt 0
@@ -44,10 +44,10 @@ R8
 R9
 R10
 Etb_mux4
-R1
 R0
-Z11 8/media/sf_Sync/DD/josef/work/mux4/tb_mux4.vhd
-Z12 F/media/sf_Sync/DD/josef/work/mux4/tb_mux4.vhd
+R1
+Z11 8/media/sf_1data/sync/sync/DD/josef/work/mux4/tb_mux4.vhd
+Z12 F/media/sf_1data/sync/sync/DD/josef/work/mux4/tb_mux4.vhd
 l0
 L1
 Va?cVzkD<`A?ZFjhR3Z]=]0
@@ -56,9 +56,9 @@ R4
 32
 R5
 !i10b 1
-R6
-Z13 !s90 -reportprogress|300|-work|work|/media/sf_Sync/DD/josef/work/mux4/tb_mux4.vhd|
-Z14 !s107 /media/sf_Sync/DD/josef/work/mux4/tb_mux4.vhd|
+Z13 !s108 1698138485.000000
+Z14 !s90 -reportprogress|300|-work|work|/media/sf_1data/sync/sync/DD/josef/work/mux4/tb_mux4.vhd|
+Z15 !s107 /media/sf_1data/sync/sync/DD/josef/work/mux4/tb_mux4.vhd|
 !i113 0
 R9
 R10
@@ -72,9 +72,9 @@ VNI1VMTIc_8j<EC_d04l060
 !s100 4YG7ajkF^3FFZ:14C8=R61
 R4
 !i10b 1
-R6
 R13
 R14
+R15
 !i113 0
 R9
 R10
