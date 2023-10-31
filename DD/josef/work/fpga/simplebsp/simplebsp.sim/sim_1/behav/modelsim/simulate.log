@@ -13,8 +13,8 @@
 # //
 # do {testbench_simulate.do}
 # vsim -voptargs=""+acc"" -L xil_defaultlib -L secureip -lib xil_defaultlib xil_defaultlib.testbench 
-# Start time: 11:18:37 on Oct 24,2023
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 10:51:55 on Oct 31,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -34,6 +34,4 @@ sim:/testbench/BTN0 \
 sim:/testbench/BTN1 \
 sim:/testbench/LED0 \
 sim:/testbench/LED1
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
 run
