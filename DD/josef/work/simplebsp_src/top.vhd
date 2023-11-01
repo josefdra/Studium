@@ -13,7 +13,7 @@ end top;
 architecture Behavioral of top is
 
 begin
-LED0 <=BTN0;
+-- LED0 <=BTN0;
 LED1 <=BTN1;
 
 end Behavioral;
