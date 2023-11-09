@@ -21,9 +21,6 @@ int main(void)
 	// PORTD als Beispiel Port
 	// Beispiel falls die Schalter auf PIND0, PIND1, PIND2 und die Taster auf 
 	// PIND3, PIND4 liegen
-	// Unteren 5 Pins des D Register auf Input. Da aber Input generell sicherer 
-	// ist komplett D auf Input
-	uint_8 DDRD = 0x00;
 	uint_8 safe;
 	uint_8 var;
 	// Setzen der ersten 3 Pins in PORTB auf Output
