@@ -21,6 +21,8 @@ int main(void)
 	// PORTD als Beispiel Port
 	// Beispiel falls die Schalter auf PIND0, PIND1, PIND2 und die Taster auf 
 	// PIND3, PIND4 liegen
+	// Pull-ups der unteren 5 PINs setzen
+	uint_8 PIND |= 0x1F
 	uint_8 safe;
 	uint_8 var;
 	// Setzen der ersten 3 Pins in PORTB auf Output
