@@ -20,6 +20,7 @@ int main(void)
 	uint8_t var = ~0x07;
 	DDRB = 0xFF;
 	uint8_t helper;
+
     while(1)
     {
 		helper = PORTB;
@@ -36,7 +37,7 @@ int main(void)
 
 		helper = helper >> 3;
 		helper = helper << 3;
-		helper ^= var;
+		helper |= var;
 		PORTB = helper;
 
 		_delay_ms(1000);
