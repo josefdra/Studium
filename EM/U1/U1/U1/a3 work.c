@@ -62,7 +62,7 @@ int main(void)
 				for (int i = 0; i < 10; i++){
 					// Abfrage, ob Taster A3 gedrückt wurde
 					if (PIND & (0 << PIND3)){
-						// Taster A3 wieder auf 0 setzen
+						// Taster A3 wieder auf 1 setzen
 						PIND &= ~(0 << PIND3)
 						// Wenn der Taster A3 am 3. Pin hängt
 						// Die untersten 3 Bits von PORTB löschen und somit die LEDs deaktivieren
