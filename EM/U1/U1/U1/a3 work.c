@@ -34,12 +34,12 @@ int main(void)
 		// Sprung Punkt
 		point:
 		// Abfrage ob Taster A4 (Start) gedrückt wurde
-		if (PIND & (1 << PIND4)){
-			// Taster A4 wieder auf 0 setzen
-			PIND &= ~(1 << PIND4)
+		if (PIND & (0 << PIND4)){
+			// Taster A4 wieder auf 1 setzen
+			PIND &= ~(0 << PIND4)
 			// Durch Initialisierung in der Schleife ist eine Anpassung des Startwerts auch
 			// noch zu Laufzeiten möglich
-			safe = (PIND & 0x07) + 1;
+			safe = (~PIND & 0x07) + 1;
 			var = safe;
 			while(1){
 				// Variable um 1 dekrementieren außer = 0, dann wieder auf Startwert
@@ -61,9 +61,9 @@ int main(void)
 				// Abfrage 10 mal alle 100ms
 				for (int i = 0; i < 10; i++){
 					// Abfrage, ob Taster A3 gedrückt wurde
-					if (PIND & (1 << PIND3)){
+					if (PIND & (0 << PIND3)){
 						// Taster A3 wieder auf 0 setzen
-						PIND &= ~(1 << PIND3)
+						PIND &= ~(0 << PIND3)
 						// Wenn der Taster A3 am 3. Pin hängt
 						// Die untersten 3 Bits von PORTB löschen und somit die LEDs deaktivieren
 						PORTB &= 0xF8
