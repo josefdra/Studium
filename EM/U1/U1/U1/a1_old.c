@@ -2,7 +2,7 @@
  * GccApplication1.c
  *
  * Created: 13.10.2023 08:38:26
- *  Author: drj45115
+ *  Author: kon33382
  */
 
 #define F_CPU 16000000UL
@@ -17,12 +17,14 @@
 int main(void)
 {
 
-	int var = 0x08;
-	int DDRB = 0xFF;
-	int helper = PORTB;
+	uint8_t var = ~0x07;
+	DDRB = 0xFF;
+	uint8_t helper;
 
     while(1)
     {
+		helper = PORTB;
+		var = ~var;
 		if (var != 0)
 		{
 			var -= 1;
@@ -31,11 +33,15 @@ int main(void)
 		{
 			var = 0x07;
 		}
+		var = ~var;
 
-		helper &= 0xF8;
+		helper = helper >> 3;
+		helper = helper << 3;
 		helper |= var;
 		PORTB = helper;
 
 		_delay_ms(1000);
+
+        //TODO:: Please write your application code
     }
 }
