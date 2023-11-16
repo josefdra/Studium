@@ -22,13 +22,14 @@
 */
 
 uint8_t safe;
-uint8_t var;
+uint8_t var = 0;
 uint8_t helper;
 volatile uint8_t start_pressed = 0;
 
 ISR(PCINT1_vect){
 	PORTB |= 0x07;
 	start_pressed = 0;
+	//Outport for ISR var = 0;
 }
 
 ISR(INT0_vect){
@@ -60,11 +61,8 @@ int main(void)
 		safe |= ((PIND & 0x40) >> 3);
 		if(start_pressed)
 		{		
-			var = 0;
-			while(1)
-			{			
-				if(var = safe + 1)
-					//Set Interrupt Port to 0 --> activate ISR --> var = 0
+			while(var != safe + 1)
+			{								
 				if(!start_pressed)
 					break;
 				helper &= 0xF8;
@@ -73,7 +71,8 @@ int main(void)
 				helper = PORTB;
 				_delay_ms(1000);	
 				var++;		
-			}		
+			}
+			//Set Interrupt Port to 0 --> activate ISR --> var = 0		
 		}	
 	}
 }
