@@ -18,27 +18,21 @@
    PORTD1 = A6
    PORTD5 = A7
    Analog A0 = A3
-   PORTD4 = A4
+   PORTD2 = A4
 */
 
 uint8_t safe;
-uint8_t var = 0;
+uint8_t var;
 uint8_t helper;
 volatile uint8_t start_pressed = 0;
 
 ISR(PCINT1_vect){
 	PORTB |= 0x07;
 	start_pressed = 0;
-	//Outport for ISR var = 0;
 }
 
 ISR(INT0_vect){
 	start_pressed = 1;
-}
-
-//Add Outport
-ISR(){
-	var = 0;
 }
 
 int main(void)
@@ -57,22 +51,19 @@ int main(void)
 	
 	while(1)
 	{		
-		safe = (PIND & 0x03);
-		safe |= ((PIND & 0x40) >> 3);
 		if(start_pressed)
-		{		
-			while(var != safe + 1)
-			{								
+		{			
+			safe = (PIND & 0x03);
+			safe |= ((PIND & 0x20) >> 3);
+			for(var = 0 + safe; var < 8; var++){
 				if(!start_pressed)
 					break;
 				helper &= 0xF8;
 				helper |= var;
 				PORTB = helper;
 				helper = PORTB;
-				_delay_ms(1000);	
-				var++;		
-			}
-			//Set Interrupt Port to 0 --> activate ISR --> var = 0		
+				_delay_ms(1000);
+			}			
 		}	
 	}
 }

@@ -18,61 +18,66 @@
    PORTD1 = A6
    PORTD5 = A7
    Analog A0 = A3
-   PORTD4 = A4
+   PORTD2 = A4
 */
 
-uint8_t safe;
-uint8_t var = 0;
-uint8_t helper;
+volatile uint8_t safe;
+volatile uint8_t var;
+volatile uint8_t helper;
 volatile uint8_t start_pressed = 0;
 
 ISR(PCINT1_vect){
-	PORTB |= 0x07;
-	start_pressed = 0;
-	//Outport for ISR var = 0;
+	if(~PINC & 0x01){
+		PORTB |= 0x07;
+		start_pressed = 0;
+	}
+	if(~PINC & 0x02){		
+		var = safe;
+		PORTC |= 0x02;
+	}
 }
 
 ISR(INT0_vect){
+	safe = (PIND & 0x03);
+	safe |= ((PIND & 0x20) >> 3);
+	var = safe;
 	start_pressed = 1;
-}
-
-//Add Outport
-ISR(){
-	var = 0;
 }
 
 int main(void)
 {
-	PORTD |= 0x1F;
-	PORTC |= 0x01;
+	PORTD |= (1<<PORTD0)|(1<<PORTD1)|(1<<PORTD2)|(1<<PORTD5);
+	PORTC |= 0x03;
+	DDRC = 0x02;
 	helper = PORTB;
-	DDRB = 0x07;
-	PORTB |= 0x07;
+	DDRB = 0x0F;
+	PORTB |= 0x0F;
 	EICRA &= ~((1<<ISC01)|(1<<ISC00));
 	EICRA |= (1<<ISC01);
 	EIMSK |=(1<<INT0);
-	PCMSK1 |= 0x01;
+	PCMSK1 |= 0x03;
 	PCICR |= 0x02;
 	sei();
+	safe = (PIND & 0x03);
+	safe |= ((PIND & 0x20) >> 3);
+	var = safe;
 	
 	while(1)
-	{		
-		safe = (PIND & 0x03);
-		safe |= ((PIND & 0x40) >> 3);
+	{
 		if(start_pressed)
-		{		
-			while(var != safe + 1)
-			{								
+		{
+			while(var < 8)
+			{
 				if(!start_pressed)
 					break;
 				helper &= 0xF8;
 				helper |= var;
 				PORTB = helper;
 				helper = PORTB;
-				_delay_ms(1000);	
-				var++;		
+				_delay_ms(1000);
+				var++;
 			}
-			//Set Interrupt Port to 0 --> activate ISR --> var = 0		
-		}	
+			PORTC &= ~(1<<PORTC1);
+		}
 	}
 }
