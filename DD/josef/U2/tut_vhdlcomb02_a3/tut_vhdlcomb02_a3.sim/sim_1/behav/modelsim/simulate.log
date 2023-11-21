@@ -11,17 +11,23 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# do {module_simulate.do}
-# vsim -voptargs=""+acc"" -L xil_defaultlib -L secureip -lib xil_defaultlib xil_defaultlib.module 
-# Start time: 19:54:59 on Nov 20,2023
+# do {TB_MODULE_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L secureip -lib xil_defaultlib xil_defaultlib.TB_MODULE 
+# Start time: 10:42:10 on Nov 21,2023
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): ../../../../tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/hdl/module.vhd(23): (vopt-1270) Bad default binding for component instance "sevenseg_inst: sevenseg".
-#  (Component port "bin" is not on the entity.)
-# ** Warning: ../../../../tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/hdl/module.vhd(23): (vopt-3473) Component instance "/module/sevenseg_inst : sevenseg" is not bound.
-# Optimization failed
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./module_simulate.do PAUSED at line 9
-# End time: 20:05:17 on Nov 20,2023, Elapsed time: 0:10:18
-# Errors: 1, Warnings: 1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_module(testbench)#1
+# Loading work.module(arch)#1
+# Loading work.sevenseg(arch)#1
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+run
+# End time: 10:50:57 on Nov 21,2023, Elapsed time: 0:08:47
+# Errors: 0, Warnings: 0

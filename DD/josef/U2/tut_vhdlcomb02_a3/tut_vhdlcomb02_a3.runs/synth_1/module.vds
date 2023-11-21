@@ -1,0 +1,163 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 21 10:47:07 2023
+# Process ID: 6183
+# Current directory: /media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.runs/synth_1
+# Command line: vivado -log module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source module.tcl
+# Log file: /media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.runs/synth_1/module.vds
+# Journal file: /media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source module.tcl -notrace
+Command: synth_design -top module -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6197 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1427.055 ; gain = 44.902 ; free physical = 11647 ; free virtual = 17186
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module '\module ' [/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/hdl/module.vhd:10]
+INFO: [Synth 8-3491] module 'sevenseg' declared at '/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/SwapEx02Ex03/sevenseg.vhd:3' bound to instance 'sevenseg_inst' of component 'sevenseg' [/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/hdl/module.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'sevenseg' [/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/SwapEx02Ex03/sevenseg.vhd:11]
+INFO: [Synth 8-226] default block is never used [/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/SwapEx02Ex03/sevenseg.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'sevenseg' (1#1) [/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/SwapEx02Ex03/sevenseg.vhd:11]
+INFO: [Synth 8-226] default block is never used [/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/hdl/module.vhd:20]
+INFO: [Synth 8-256] done synthesizing module '\module ' (2#1) [/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/hdl/module.vhd:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1472.805 ; gain = 90.652 ; free physical = 11662 ; free virtual = 17201
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1472.805 ; gain = 90.652 ; free physical = 11661 ; free virtual = 17200
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1472.805 ; gain = 90.652 ; free physical = 11661 ; free virtual = 17200
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/constrs_1/imports/impl/Arty_ArtyA735_ArtyA7100_Master.xdc]
+Finished Parsing XDC File [/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/constrs_1/imports/impl/Arty_ArtyA735_ArtyA7100_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/sf_sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.srcs/constrs_1/imports/impl/Arty_ArtyA735_ArtyA7100_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/\module _propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/\module _propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1727.816 ; gain = 0.000 ; free physical = 11424 ; free virtual = 16963
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1727.816 ; gain = 0.000 ; free physical = 11425 ; free virtual = 16963
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1727.816 ; gain = 0.000 ; free physical = 11424 ; free virtual = 16963
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1727.816 ; gain = 0.000 ; free physical = 11425 ; free virtual = 16963
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1727.816 ; gain = 345.664 ; free physical = 11493 ; free virtual = 17031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1727.816 ; gain = 345.664 ; free physical = 11493 ; free virtual = 17031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1727.816 ; gain = 345.664 ; free physical = 11495 ; free virtual = 17034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1727.816 ; gain = 345.664 ; free physical = 11494 ; free virtual = 17032
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1735.824 ; gain = 353.672 ; free physical = 11476 ; free virtual = 17015
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1783.824 ; gain = 401.672 ; free physical = 11351 ; free virtual = 16889
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1783.824 ; gain = 401.672 ; free physical = 11351 ; free virtual = 16889
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1792.840 ; gain = 410.688 ; free physical = 11350 ; free virtual = 16889
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+couldn't open "./.Xil/Vivado-6183-ubu64//incrSyn/\\module .gnd": protocol error
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1792.840 ; gain = 155.676 ; free physical = 11350 ; free virtual = 16889
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 10:47:32 2023...
