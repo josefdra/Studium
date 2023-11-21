@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/sf_Sync/DD/josef/U2/tut_vhdlcomb02_a2/tut_vhdlcomb02_a2.srcs/sources_1/imports/hdl/sevenseg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sevenseg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/sf_Sync/DD/josef/U2/tut_vhdlcomb02_a2/tut_vhdlcomb02_a2.srcs/sim_1/imports/hdl/tb_sevenseg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_SEVENSEG'

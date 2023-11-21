@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/sf_Sync/DD/josef/U2/tut_vhdlcomb02_a3/tut_vhdlcomb02_a3.sim/sim_1/behav/modelsim
+Emodule
+Z1 w1700507009
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8../../../../tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/hdl/module.vhd
+Z5 F../../../../tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/hdl/module.vhd
+l0
+L4
+V?gE`jWPTiPiXD^kL<icl03
+!s100 Eg;SlMi0WUN`0Po=OELVD1
+Z6 OL;C;10.6c;65
+31
+Z7 !s110 1700508938
+!i10b 1
+Z8 !s108 1700508938.000000
+Z9 !s90 -64|-93|-work|xil_defaultlib|../../../../tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/SwapEx02Ex03/sevenseg.vhd|../../../../tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/hdl/module.vhd|
+Z10 !s107 ../../../../tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/hdl/module.vhd|../../../../tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/SwapEx02Ex03/sevenseg.vhd|
+!i113 0
+Z11 o-93 -work xil_defaultlib
+Z12 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+Z13 DEx4 work 6 module 0 22 ?gE`jWPTiPiXD^kL<icl03
+l16
+L10
+Z14 V9PP[9N`cH]zDE=SRH[zZ<1
+Z15 !s100 ?ncB@C@0AeVR>A64hDVh`0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Esevenseg
+R1
+R2
+R3
+R0
+Z16 8../../../../tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/SwapEx02Ex03/sevenseg.vhd
+Z17 F../../../../tut_vhdlcomb02_a3.srcs/sources_1/imports/imports/SwapEx02Ex03/sevenseg.vhd
+l0
+L3
+V>cig[eXNkRc61h[E57QT30
+!s100 j`fBjN@n[W2V3i;;:YFV:3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Aarch
+R2
+R3
+Z18 DEx4 work 8 sevenseg 0 22 >cig[eXNkRc61h[E57QT30
+l14
+L12
+Z19 Vcd:7heImGYh968IT17XNU3
+Z20 !s100 gI]VYBi6@4V8Nl>7H2I=M3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12

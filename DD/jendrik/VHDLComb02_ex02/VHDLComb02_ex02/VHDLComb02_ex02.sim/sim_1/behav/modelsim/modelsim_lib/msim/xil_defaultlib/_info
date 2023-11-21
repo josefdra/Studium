@@ -1,0 +1,97 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/zwork/dd_/tut_vhdlcomb02_given/VHDLComb02_ex02/VHDLComb02_ex02/VHDLComb02_ex02.sim/sim_1/behav/modelsim
+T_opt
+!s110 1699099842
+VjLGHU5KDT_ZRZTB<1dd7j1
+04 11 9 work tb_sevenseg testbench 1
+=1-0800274f3e3b-654634c2-62746-2395
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L secureip +acc
+tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+Esevenseg
+Z1 w1699099832
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8../../../../VHDLComb02_ex02.srcs/sources_1/imports/hdl/sevenseg.vhd
+Z5 F../../../../VHDLComb02_ex02.srcs/sources_1/imports/hdl/sevenseg.vhd
+l0
+L3
+V]@75CzlQSeC[>45h[nKgc2
+!s100 FbPLJ@[3nieYA4SEzC9bm3
+Z6 OL;C;10.6c;65
+31
+Z7 !s110 1699099838
+!i10b 1
+Z8 !s108 1699099838.000000
+Z9 !s90 -64|-93|-work|xil_defaultlib|../../../../VHDLComb02_ex02.srcs/sources_1/imports/hdl/sevenseg.vhd|../../../../VHDLComb02_ex02.srcs/sim_1/imports/hdl/tb_sevenseg.vhd|
+Z10 !s107 ../../../../VHDLComb02_ex02.srcs/sim_1/imports/hdl/tb_sevenseg.vhd|../../../../VHDLComb02_ex02.srcs/sources_1/imports/hdl/sevenseg.vhd|
+!i113 0
+Z11 o-93 -work xil_defaultlib
+Z12 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+DEx4 work 8 sevenseg 0 22 ]@75CzlQSeC[>45h[nKgc2
+l10
+L9
+VE1MHlJZ;>okI^5SZ=C0U70
+!s100 hZ2zcgYPm[zVe949JcL;e2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Etb_sevenseg
+Z13 w1699010999
+R2
+R3
+R0
+Z14 8../../../../VHDLComb02_ex02.srcs/sim_1/imports/hdl/tb_sevenseg.vhd
+Z15 F../../../../VHDLComb02_ex02.srcs/sim_1/imports/hdl/tb_sevenseg.vhd
+l0
+L4
+V3^:`V<9J[hF]X7m]3>>Go2
+!s100 VEN5doL<?SERVWTKJDMEO1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Atestbench
+R2
+R3
+DEx4 work 11 tb_sevenseg 0 22 3^:`V<9J[hF]X7m]3>>Go2
+l18
+L7
+V4fd6A:HB?im]bgP[P=2ZJ1
+!s100 mTQ62;Afa]886^M@W^9XI1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
