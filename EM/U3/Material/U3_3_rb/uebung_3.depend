@@ -1,0 +1,2663 @@
+# depslib dependency file v1.0
+1680701815 source:c:\users\krf42279\downloads\uebung_3\uebung_3\custommovement.c
+	"nnxt.h"
+	"customMovement.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt.h
+	"nnxt_Ports.h"
+	"nnxt_misc.h"
+	"nnxt_OnBoardPeriph.h"
+	"nnxt_config.h"
+	"nnxt_debug.h"
+	"stm32_adafruit_lcd.h"
+	"nnxt_os_glue.h"
+	"nnxt_shared_ds.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_ports.h
+	<stdint.h>
+	"stm32f4xx_gpio.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_gpio.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\inc\stm32f4xx.h
+	"core_cm4.h"
+	"system_stm32f4xx.h"
+	<stdint.h>
+	"stm32f4xx_conf.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\cmsis\core_cm4.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+	<core_cm4_simd.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\cmsis\core_cminstr.h
+	<cmsis_iar.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\cmsis\core_cmfunc.h
+	<cmsis_iar.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\cmsis\core_cm4_simd.h
+	<cmsis_iar.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\inc\system_stm32f4xx.h
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\inc\stm32f4xx_conf.h
+	"stm32f4xx_adc.h"
+	"stm32f4xx_can.h"
+	"stm32f4xx_crc.h"
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_dac.h"
+	"stm32f4xx_dbgmcu.h"
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_dma.h"
+	"stm32f4xx_exti.h"
+	"stm32f4xx_flash.h"
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_hash.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_iwdg.h"
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_spi.h"
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_tim.h"
+	"stm32f4xx_usart.h"
+	"stm32f4xx_wwdg.h"
+	"misc.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_adc.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_can.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_crc.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_cryp.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dac.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dbgmcu.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dcmi.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dma.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_exti.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_flash.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_fsmc.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_hash.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_i2c.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_iwdg.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_pwr.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_rcc.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_rng.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_rtc.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_sdio.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_spi.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_syscfg.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_tim.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_usart.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_wwdg.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\inc\misc.h
+	"stm32f4xx.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_misc.h
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_onboardperiph.h
+	"stm32f4xx_gpio.h"
+	"nnxt_common.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_common.h
+	"stm32f4xx_gpio.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_config.h
+	"stdint.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_debug.h
+	"nnxt_config.h"
+	"SEGGER_SYSVIEW.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\inc\stm32_adafruit_lcd.h
+	"st7735.h"
+	"fonts.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\inc\st7735.h
+	"lcd.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\inc\lcd.h
+	<stdint.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\inc\fonts.h
+	<stdint.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_os_glue.h
+	<stdint.h>
+	"nnxt_config.h"
+	"stm32f4xx_tim.h"
+	"ee.h"
+	"FreeRTOS_glue.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\freertos_glue.h
+	"nnxt_os_glue.h"
+	"FreeRTOS.h"
+	"semphr.h"
+	"task.h"
+	"stm32f4xx.h"
+	"nnxt_shared_ds.h"
+	<stdint.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\freertos.h
+	<stddef.h>
+	<stdint.h>
+	"FreeRTOSConfig.h"
+	"projdefs.h"
+	"portable.h"
+	<reent.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\freertosconfig.h
+	"system_stm32f4xx.h"
+	<stdint.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\projdefs.h
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\portable.h
+	"deprecated_definitions.h"
+	"portmacro.h"
+	"mpu_wrappers.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\deprecated_definitions.h
+	"..\..\Source\portable\owatcom\16bitdos\pc\portmacro.h"
+	"..\..\Source\portable\owatcom\16bitdos\flsh186\portmacro.h"
+	"../portable/GCC/ATMega323/portmacro.h"
+	"../portable/IAR/ATMega323/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC18F/portmacro.h"
+	"../../Source/portable/MPLAB/PIC32MX/portmacro.h"
+	"libFreeRTOS/Include/portmacro.h"
+	"../../Source/portable/SDCC/Cygnal/portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC2000/portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC23xx/portmacro.h"
+	"..\..\Source\portable\IAR\MSP430\portmacro.h"
+	"../../Source/portable/GCC/MSP430F449/portmacro.h"
+	"../../Source/portable/Rowley/MSP430F449/portmacro.h"
+	"..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91SAM7S/portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM7S64\portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM9XE\portmacro.h"
+	"..\..\Source\portable\IAR\LPC2000\portmacro.h"
+	"..\..\Source\portable\IAR\STR71x\portmacro.h"
+	"..\..\Source\portable\IAR\STR75x\portmacro.h"
+	"..\..\Source\portable\GCC\STR75x\portmacro.h"
+	"..\..\Source\portable\IAR\STR91x\portmacro.h"
+	"../../Source/portable/GCC/H8S2329/portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91FR40008/portmacro.h"
+	"../../Source/portable/RVDS/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/CodeWarrior/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MicroBlaze/portmacro.h"
+	"..\..\Source\portable\Paradigm\Tern_EE\small\portmacro.h"
+	"../../Source/portable/GCC/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MCF5235/portmacro.h"
+	"../../../Source/portable/GCC/ColdFire_V2/portmacro.h"
+	"../../Source/portable/CodeWarrior/ColdFire_V2/portmacro.h"
+	"../../Source/portable/GCC/PPC405_Xilinx/portmacro.h"
+	"../../Source/portable/GCC/PPC440_Xilinx/portmacro.h"
+	"..\..\Source\portable\Softune\MB96340\portmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\PC\prtmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\flsh186\prtmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\portable\portmacro.h
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\mpu_wrappers.h
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\semphr.h
+	"queue.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\queue.h
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\task.h
+	"list.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\list.h
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_shared_ds.h
+	"nnxt_Ports.h"
+	"nnxt_OnBoardPeriph.h"
+	"nnxt_config.h"
+	"nnxt_os_glue.h"
+
+1680701781 c:\users\krf42279\downloads\uebung_3\uebung_3\custommovement.h
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\src\font12.c
+	"fonts.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\src\font16.c
+	"fonts.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\src\font20.c
+	"fonts.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\src\font24.c
+	"fonts.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\src\font8.c
+	"fonts.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\src\st7735.c
+	"st7735.h"
+	"nnxt_display_glue.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_display_glue.h
+	<stdint.h>
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\display\src\stm32_adafruit_lcd.c
+	"stm32_adafruit_lcd.h"
+	"fonts.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\freertos_glue.c
+	"FreeRTOS_glue.h"
+	"portmacro.h"
+	<limits.h>
+	"nnxt.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\croutine.c
+	"FreeRTOS.h"
+	"task.h"
+	"croutine.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\croutine.h
+	"list.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\event_groups.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"event_groups.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\timers.h
+	"task.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\event_groups.h
+	"timers.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\heap_1.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\list.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"list.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\portable\port.c
+	"FreeRTOS.h"
+	"task.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\queue.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"croutine.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\tasks.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"StackMacros.h"
+	<stdio.h>
+	"tasks_test_access_functions.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\include\stackmacros.h
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\freertos\source\timers.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"timers.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\hal\src\em_i2c.c
+	"em_i2c.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_gpio.h"
+	<stdio.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\hal\inc\em_i2c.h
+	"stm32f4xx_i2c.h"
+	"em_config.h"
+	<stdint.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\hal\inc\em_config.h
+	"nnxt_config.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\hal\src\em_interrupts.c
+	"em_interrupts.h"
+	"nnxt_misc.h"
+	"stm32f4xx_exti.h"
+	"nnxt_config.h"
+	"nnxt.h"
+	"nnxt_shared_ds.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\hal\inc\em_interrupts.h
+	"nnxt.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_display_glue.c
+	"nnxt_display_glue.h"
+	"SpiDevice.h"
+	"nnxt.h"
+	"stm32f4xx_gpio.h"
+	"nnxt_config.h"
+	"em_clk.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\spi\inc\spidevice.h
+	"nnxt_config.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\hal\inc\em_clk.h
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_filter.c
+	"nnxt_Filter.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_filter.h
+	<inttypes.h>
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_i2c.c
+	"em_i2c.h"
+	"nnxt_Ports.h"
+	<stdbool.h>
+	"nnxt_os_glue.h"
+	"stm32_adafruit_lcd.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_misc.c
+	<stdint.h>
+	"nnxt_misc.h"
+	"nnxt.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_motors.c
+	"stm32f4xx_gpio.h"
+	"nnxt_config.h"
+	"nnxt_Ports.h"
+	"stm32f4xx_tim.h"
+	"em_clk.h"
+	"stm32f4xx_exti.h"
+	"nnxt_common.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_onboardperiph.c
+	"nnxt_config.h"
+	"nnxt_OnBoardPeriph.h"
+	"em_clk.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_tim.h"
+	"nnxt_common.h"
+	"nnxt_os_glue.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_os_glue.c
+	"nnxt_os_glue.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_pcf8574lb.c
+	"nnxt_i2c.h"
+	"nnxt_pcf8574lb.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_i2c.h
+	"nnxt_Ports.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_pcf8574lb.h
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_sdcard_glue.c
+	"nnxt_config.h"
+	"stm32f4xx_gpio.h"
+	"SpiDevice.h"
+	"diskio.h"
+	"stm32f4xx_tim.h"
+	"nnxt_os_glue.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\sdcard\fatfs\inc\diskio.h
+	"ff.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\sdcard\fatfs\inc\ff.h
+	"ffconf.h"
+	<windows.h>
+	<stdint.h>
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\sdcard\fatfs\inc\ffconf.h
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_sensors.c
+	"nnxt_Ports.h"
+	<stdint.h>
+	"nnxt_config.h"
+	"em_clk.h"
+	"nnxt_i2c.h"
+	<math.h>
+	"nnxt_misc.h"
+	"nnxt_common.h"
+	"stm32f4xx_dma.h"
+	"nnxt_os_glue.h"
+	"nnxt_Filter.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\src\nnxt_startup.c
+	"nnxt_Ports.h"
+	"nnxt_i2c.h"
+	"nnxt_config.h"
+	"system_stm32f4xx.h"
+	"stm32f4xx.h"
+	"nnxt_OnBoardPeriph.h"
+	"misc.h"
+	"nnxt_misc.h"
+	"nnxt.h"
+	"SpiDevice.h"
+	"nnxt_sdcard_glue.h"
+	"stm32f4xx_tim.h"
+	"ff.h"
+
+1680701647 c:\users\krf42279\downloads\uebung_3\uebung_3\libs\nnxt\inc\nnxt_sdcard_glue.h
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\sdcard\fatfs\src\ff.c
+	"ff.h"
+	"diskio.h"
+	<stdarg.h>
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\sdcard\fatfs\src\ffsystem.c
+	"ff.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\sdcard\fatfs\src\ffunicode.c
+	"ff.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\spi\src\spidevice.c
+	"stm32f4xx_spi.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+	"SpiDevice.h"
+	"nnxt_os_glue.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\misc.c
+	"misc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_adc.c
+	"stm32f4xx_adc.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_can.c
+	"stm32f4xx_can.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_crc.c
+	"stm32f4xx_crc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp.c
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp_aes.c
+	"stm32f4xx_cryp.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp_des.c
+	"stm32f4xx_cryp.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp_tdes.c
+	"stm32f4xx_cryp.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dac.c
+	"stm32f4xx_dac.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dbgmcu.c
+	"stm32f4xx_dbgmcu.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dcmi.c
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dma.c
+	"stm32f4xx_dma.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_exti.c
+	"stm32f4xx_exti.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_flash.c
+	"stm32f4xx_flash.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_fsmc.c
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_gpio.c
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_hash.c
+	"stm32f4xx_hash.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_hash_md5.c
+	"stm32f4xx_hash.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_hash_sha1.c
+	"stm32f4xx_hash.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_i2c.c
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_iwdg.c
+	"stm32f4xx_iwdg.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_pwr.c
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_rcc.c
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_rng.c
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_rtc.c
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_sdio.c
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_spi.c
+	"stm32f4xx_spi.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_syscfg.c
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_tim.c
+	"stm32f4xx_tim.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_usart.c
+	"stm32f4xx_usart.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\spl\src\stm32f4xx_wwdg.c
+	"stm32f4xx_wwdg.h"
+	"stm32f4xx_rcc.h"
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\src\startup_stm32f4xx.s
+
+1680701647 source:c:\users\krf42279\downloads\uebung_3\uebung_3\libs\stm32 board\src\system_stm32f4xx.c
+	"stm32f4xx.h"
+
+1680702657 source:c:\users\krf42279\downloads\uebung_3\uebung_3\main.c
+	"nnxt.h"
+	"customMovement.h"
+	"stdio.h"
+
+1681906644 source:c:\users\krf42279\downloads\uebung_3\custommovement.c
+	"nnxt.h"
+	"customMovement.h"
+
+1681906574 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt.h
+	"nnxt_Ports.h"
+	"nnxt_misc.h"
+	"nnxt_OnBoardPeriph.h"
+	"nnxt_config.h"
+	"nnxt_debug.h"
+	"stm32_adafruit_lcd.h"
+	"nnxt_os_glue.h"
+	"nnxt_shared_ds.h"
+
+1681906596 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_ports.h
+	<stdint.h>
+	"stm32f4xx_gpio.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_gpio.h
+	"stm32f4xx.h"
+
+1681906580 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\inc\stm32f4xx.h
+	"core_cm4.h"
+	"system_stm32f4xx.h"
+	<stdint.h>
+	"stm32f4xx_conf.h"
+
+1681906580 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\cmsis\core_cm4.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+	<core_cm4_simd.h>
+
+1681906580 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\cmsis\core_cminstr.h
+	<cmsis_iar.h>
+
+1681906580 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\cmsis\core_cmfunc.h
+	<cmsis_iar.h>
+
+1681906580 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\cmsis\core_cm4_simd.h
+	<cmsis_iar.h>
+
+1681906594 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\inc\system_stm32f4xx.h
+
+1681906580 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\inc\stm32f4xx_conf.h
+	"stm32f4xx_adc.h"
+	"stm32f4xx_can.h"
+	"stm32f4xx_crc.h"
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_dac.h"
+	"stm32f4xx_dbgmcu.h"
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_dma.h"
+	"stm32f4xx_exti.h"
+	"stm32f4xx_flash.h"
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_hash.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_iwdg.h"
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_spi.h"
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_tim.h"
+	"stm32f4xx_usart.h"
+	"stm32f4xx_wwdg.h"
+	"misc.h"
+
+1681906590 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_adc.h
+	"stm32f4xx.h"
+
+1681906590 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_can.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_crc.h
+	"stm32f4xx.h"
+
+1681906590 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_cryp.h
+	"stm32f4xx.h"
+
+1681906590 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dac.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dbgmcu.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dcmi.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dma.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_exti.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_flash.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_fsmc.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_hash.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_i2c.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_iwdg.h
+	"stm32f4xx.h"
+
+1681906598 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_pwr.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_rcc.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_rng.h
+	"stm32f4xx.h"
+
+1681906592 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_rtc.h
+	"stm32f4xx.h"
+
+1681906594 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_sdio.h
+	"stm32f4xx.h"
+
+1681906594 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_spi.h
+	"stm32f4xx.h"
+
+1681906594 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_syscfg.h
+	"stm32f4xx.h"
+
+1681906594 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_tim.h
+	"stm32f4xx.h"
+
+1681906594 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_usart.h
+	"stm32f4xx.h"
+
+1681906594 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_wwdg.h
+	"stm32f4xx.h"
+
+1681906590 c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\inc\misc.h
+	"stm32f4xx.h"
+
+1681906576 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_misc.h
+
+1681906586 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_onboardperiph.h
+	"stm32f4xx_gpio.h"
+	"nnxt_common.h"
+
+1681906574 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_common.h
+	"stm32f4xx_gpio.h"
+
+1681906574 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_config.h
+	"stdint.h"
+
+1681906574 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_debug.h
+	"nnxt_config.h"
+	"SEGGER_SYSVIEW.h"
+
+1681906570 c:\users\krf42279\downloads\uebung_3\libs\display\inc\stm32_adafruit_lcd.h
+	"st7735.h"
+	"fonts.h"
+
+1681906570 c:\users\krf42279\downloads\uebung_3\libs\display\inc\st7735.h
+	"lcd.h"
+
+1681906570 c:\users\krf42279\downloads\uebung_3\libs\display\inc\lcd.h
+	<stdint.h>
+
+1681906570 c:\users\krf42279\downloads\uebung_3\libs\display\inc\fonts.h
+	<stdint.h>
+
+1681906586 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_os_glue.h
+	<stdint.h>
+	"nnxt_config.h"
+	"stm32f4xx_tim.h"
+	"ee.h"
+	"FreeRTOS_glue.h"
+
+1681906568 c:\users\krf42279\downloads\uebung_3\libs\freertos\freertos_glue.h
+	"nnxt_os_glue.h"
+	"FreeRTOS.h"
+	"semphr.h"
+	"task.h"
+	"stm32f4xx.h"
+	"nnxt_shared_ds.h"
+	<stdint.h>
+
+1681906586 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\freertos.h
+	<stddef.h>
+	<stdint.h>
+	"FreeRTOSConfig.h"
+	"projdefs.h"
+	"portable.h"
+	<reent.h>
+
+1681906568 c:\users\krf42279\downloads\uebung_3\libs\freertos\freertosconfig.h
+	"system_stm32f4xx.h"
+	<stdint.h>
+
+1681906586 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\projdefs.h
+
+1681906588 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\portable.h
+	"deprecated_definitions.h"
+	"portmacro.h"
+	"mpu_wrappers.h"
+
+1681906582 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\deprecated_definitions.h
+	"..\..\Source\portable\owatcom\16bitdos\pc\portmacro.h"
+	"..\..\Source\portable\owatcom\16bitdos\flsh186\portmacro.h"
+	"../portable/GCC/ATMega323/portmacro.h"
+	"../portable/IAR/ATMega323/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC18F/portmacro.h"
+	"../../Source/portable/MPLAB/PIC32MX/portmacro.h"
+	"libFreeRTOS/Include/portmacro.h"
+	"../../Source/portable/SDCC/Cygnal/portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC2000/portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC23xx/portmacro.h"
+	"..\..\Source\portable\IAR\MSP430\portmacro.h"
+	"../../Source/portable/GCC/MSP430F449/portmacro.h"
+	"../../Source/portable/Rowley/MSP430F449/portmacro.h"
+	"..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91SAM7S/portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM7S64\portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM9XE\portmacro.h"
+	"..\..\Source\portable\IAR\LPC2000\portmacro.h"
+	"..\..\Source\portable\IAR\STR71x\portmacro.h"
+	"..\..\Source\portable\IAR\STR75x\portmacro.h"
+	"..\..\Source\portable\GCC\STR75x\portmacro.h"
+	"..\..\Source\portable\IAR\STR91x\portmacro.h"
+	"../../Source/portable/GCC/H8S2329/portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91FR40008/portmacro.h"
+	"../../Source/portable/RVDS/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/CodeWarrior/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MicroBlaze/portmacro.h"
+	"..\..\Source\portable\Paradigm\Tern_EE\small\portmacro.h"
+	"../../Source/portable/GCC/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MCF5235/portmacro.h"
+	"../../../Source/portable/GCC/ColdFire_V2/portmacro.h"
+	"../../Source/portable/CodeWarrior/ColdFire_V2/portmacro.h"
+	"../../Source/portable/GCC/PPC405_Xilinx/portmacro.h"
+	"../../Source/portable/GCC/PPC440_Xilinx/portmacro.h"
+	"..\..\Source\portable\Softune\MB96340\portmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\PC\prtmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\flsh186\prtmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+
+1681906588 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\portable\portmacro.h
+
+1681906584 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\mpu_wrappers.h
+
+1681906586 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\semphr.h
+	"queue.h"
+
+1681906586 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\queue.h
+
+1681906596 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\task.h
+	"list.h"
+
+1681906584 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\list.h
+
+1681906596 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_shared_ds.h
+	"nnxt_Ports.h"
+	"nnxt_OnBoardPeriph.h"
+	"nnxt_config.h"
+	"nnxt_os_glue.h"
+
+1681906644 c:\users\krf42279\downloads\uebung_3\custommovement.h
+
+1681906574 source:c:\users\krf42279\downloads\uebung_3\libs\display\src\font12.c
+	"fonts.h"
+
+1681906570 source:c:\users\krf42279\downloads\uebung_3\libs\display\src\font16.c
+	"fonts.h"
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\display\src\font20.c
+	"fonts.h"
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\display\src\font24.c
+	"fonts.h"
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\display\src\font8.c
+	"fonts.h"
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\display\src\st7735.c
+	"st7735.h"
+	"nnxt_display_glue.h"
+
+1681906574 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_display_glue.h
+	<stdint.h>
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\display\src\stm32_adafruit_lcd.c
+	"stm32_adafruit_lcd.h"
+	"fonts.h"
+
+1681906568 source:c:\users\krf42279\downloads\uebung_3\libs\freertos\freertos_glue.c
+	"FreeRTOS_glue.h"
+	"portmacro.h"
+	<limits.h>
+	"nnxt.h"
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\freertos\source\croutine.c
+	"FreeRTOS.h"
+	"task.h"
+	"croutine.h"
+
+1681906588 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\croutine.h
+	"list.h"
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\freertos\source\event_groups.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"event_groups.h"
+
+1681906596 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\timers.h
+	"task.h"
+
+1681906584 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\event_groups.h
+	"timers.h"
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\freertos\source\heap_1.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\freertos\source\list.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"list.h"
+
+1681906588 source:c:\users\krf42279\downloads\uebung_3\libs\freertos\source\portable\port.c
+	"FreeRTOS.h"
+	"task.h"
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\freertos\source\queue.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"croutine.h"
+
+1681906572 source:c:\users\krf42279\downloads\uebung_3\libs\freertos\source\tasks.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"StackMacros.h"
+	<stdio.h>
+	"tasks_test_access_functions.h"
+
+1681906588 c:\users\krf42279\downloads\uebung_3\libs\freertos\source\include\stackmacros.h
+
+1681906574 source:c:\users\krf42279\downloads\uebung_3\libs\freertos\source\timers.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"timers.h"
+
+1681906574 source:c:\users\krf42279\downloads\uebung_3\libs\hal\src\em_i2c.c
+	"em_i2c.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_gpio.h"
+	<stdio.h>
+
+1681906574 c:\users\krf42279\downloads\uebung_3\libs\hal\inc\em_i2c.h
+	"stm32f4xx_i2c.h"
+	"em_config.h"
+	<stdint.h>
+
+1681906574 c:\users\krf42279\downloads\uebung_3\libs\hal\inc\em_config.h
+	"nnxt_config.h"
+
+1681906574 source:c:\users\krf42279\downloads\uebung_3\libs\hal\src\em_interrupts.c
+	"em_interrupts.h"
+	"nnxt_misc.h"
+	"stm32f4xx_exti.h"
+	"nnxt_config.h"
+	"nnxt.h"
+	"nnxt_shared_ds.h"
+
+1681906574 c:\users\krf42279\downloads\uebung_3\libs\hal\inc\em_interrupts.h
+	"nnxt.h"
+
+1681906576 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_display_glue.c
+	"nnxt_display_glue.h"
+	"SpiDevice.h"
+	"nnxt.h"
+	"stm32f4xx_gpio.h"
+	"nnxt_config.h"
+	"em_clk.h"
+
+1681906578 c:\users\krf42279\downloads\uebung_3\libs\spi\inc\spidevice.h
+	"nnxt_config.h"
+
+1681906574 c:\users\krf42279\downloads\uebung_3\libs\hal\inc\em_clk.h
+	"stm32f4xx_rcc.h"
+
+1681906576 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_filter.c
+	"nnxt_Filter.h"
+
+1681906576 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_filter.h
+	<inttypes.h>
+
+1681906590 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_i2c.c
+	"em_i2c.h"
+	"nnxt_Ports.h"
+	<stdbool.h>
+	"nnxt_os_glue.h"
+	"stm32_adafruit_lcd.h"
+
+1681906578 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_misc.c
+	<stdint.h>
+	"nnxt_misc.h"
+	"nnxt.h"
+
+1681906578 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_motors.c
+	"stm32f4xx_gpio.h"
+	"nnxt_config.h"
+	"nnxt_Ports.h"
+	"stm32f4xx_tim.h"
+	"em_clk.h"
+	"stm32f4xx_exti.h"
+	"nnxt_common.h"
+
+1681906578 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_onboardperiph.c
+	"nnxt_config.h"
+	"nnxt_OnBoardPeriph.h"
+	"em_clk.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_tim.h"
+	"nnxt_common.h"
+	"nnxt_os_glue.h"
+
+1681906578 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_os_glue.c
+	"nnxt_os_glue.h"
+
+1681906578 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_pcf8574lb.c
+	"nnxt_i2c.h"
+	"nnxt_pcf8574lb.h"
+
+1681906576 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_i2c.h
+	"nnxt_Ports.h"
+
+1681906576 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_pcf8574lb.h
+
+1681906578 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_sdcard_glue.c
+	"nnxt_config.h"
+	"stm32f4xx_gpio.h"
+	"SpiDevice.h"
+	"diskio.h"
+	"stm32f4xx_tim.h"
+	"nnxt_os_glue.h"
+
+1681906588 c:\users\krf42279\downloads\uebung_3\libs\sdcard\fatfs\inc\diskio.h
+	"ff.h"
+
+1681906588 c:\users\krf42279\downloads\uebung_3\libs\sdcard\fatfs\inc\ff.h
+	"ffconf.h"
+	<windows.h>
+	<stdint.h>
+
+1681906588 c:\users\krf42279\downloads\uebung_3\libs\sdcard\fatfs\inc\ffconf.h
+
+1681906578 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_sensors.c
+	"nnxt_Ports.h"
+	<stdint.h>
+	"nnxt_config.h"
+	"em_clk.h"
+	"nnxt_i2c.h"
+	<math.h>
+	"nnxt_misc.h"
+	"nnxt_common.h"
+	"stm32f4xx_dma.h"
+	"nnxt_os_glue.h"
+	"nnxt_Filter.h"
+
+1681906578 source:c:\users\krf42279\downloads\uebung_3\libs\nnxt\src\nnxt_startup.c
+	"nnxt_Ports.h"
+	"nnxt_i2c.h"
+	"nnxt_config.h"
+	"system_stm32f4xx.h"
+	"stm32f4xx.h"
+	"nnxt_OnBoardPeriph.h"
+	"misc.h"
+	"nnxt_misc.h"
+	"nnxt.h"
+	"SpiDevice.h"
+	"nnxt_sdcard_glue.h"
+	"stm32f4xx_tim.h"
+	"ff.h"
+
+1681906596 c:\users\krf42279\downloads\uebung_3\libs\nnxt\inc\nnxt_sdcard_glue.h
+
+1681906588 source:c:\users\krf42279\downloads\uebung_3\libs\sdcard\fatfs\src\ff.c
+	"ff.h"
+	"diskio.h"
+	<stdarg.h>
+
+1681906590 source:c:\users\krf42279\downloads\uebung_3\libs\sdcard\fatfs\src\ffsystem.c
+	"ff.h"
+
+1681906590 source:c:\users\krf42279\downloads\uebung_3\libs\sdcard\fatfs\src\ffunicode.c
+	"ff.h"
+
+1681906646 source:c:\users\krf42279\downloads\uebung_3\libs\spi\src\spidevice.c
+	"stm32f4xx_spi.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+	"SpiDevice.h"
+	"nnxt_os_glue.h"
+
+1681906594 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\misc.c
+	"misc.h"
+
+1681906594 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_adc.c
+	"stm32f4xx_adc.h"
+	"stm32f4xx_rcc.h"
+
+1681906594 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_can.c
+	"stm32f4xx_can.h"
+	"stm32f4xx_rcc.h"
+
+1681906594 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_crc.c
+	"stm32f4xx_crc.h"
+
+1681906594 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp.c
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_rcc.h"
+
+1681906596 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp_aes.c
+	"stm32f4xx_cryp.h"
+
+1681906596 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp_des.c
+	"stm32f4xx_cryp.h"
+
+1681906596 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp_tdes.c
+	"stm32f4xx_cryp.h"
+
+1681906596 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dac.c
+	"stm32f4xx_dac.h"
+	"stm32f4xx_rcc.h"
+
+1681906596 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dbgmcu.c
+	"stm32f4xx_dbgmcu.h"
+
+1681906596 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dcmi.c
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_rcc.h"
+
+1681906596 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dma.c
+	"stm32f4xx_dma.h"
+	"stm32f4xx_rcc.h"
+
+1681906596 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_exti.c
+	"stm32f4xx_exti.h"
+
+1681906596 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_flash.c
+	"stm32f4xx_flash.h"
+
+1681906632 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_fsmc.c
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_rcc.h"
+
+1681906596 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_gpio.c
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+
+1681906600 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_hash.c
+	"stm32f4xx_hash.h"
+	"stm32f4xx_rcc.h"
+
+1681906600 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_hash_md5.c
+	"stm32f4xx_hash.h"
+
+1681906634 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_hash_sha1.c
+	"stm32f4xx_hash.h"
+
+1681906634 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_i2c.c
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_rcc.h"
+
+1681906598 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_iwdg.c
+	"stm32f4xx_iwdg.h"
+
+1681906598 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_pwr.c
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+
+1681906598 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_rcc.c
+	"stm32f4xx_rcc.h"
+
+1681906598 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_rng.c
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rcc.h"
+
+1681906600 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_rtc.c
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_rcc.h"
+
+1681906598 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_sdio.c
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_rcc.h"
+
+1681906598 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_spi.c
+	"stm32f4xx_spi.h"
+	"stm32f4xx_rcc.h"
+
+1681906600 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_syscfg.c
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_rcc.h"
+
+1681906600 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_tim.c
+	"stm32f4xx_tim.h"
+	"stm32f4xx_rcc.h"
+
+1681906600 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_usart.c
+	"stm32f4xx_usart.h"
+	"stm32f4xx_rcc.h"
+
+1681906600 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\spl\src\stm32f4xx_wwdg.c
+	"stm32f4xx_wwdg.h"
+	"stm32f4xx_rcc.h"
+
+1681906594 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\src\startup_stm32f4xx.s
+
+1681906580 source:c:\users\krf42279\downloads\uebung_3\libs\stm32 board\src\system_stm32f4xx.c
+	"stm32f4xx.h"
+
+1682425524 source:c:\users\krf42279\downloads\uebung_3\main.c
+	"nnxt.h"
+	"customMovement.h"
+	"stdio.h"
+	"timer.h"
+
+1681301844 source:g:\roboter\rb\uebung_3\custommovement.c
+	"nnxt.h"
+	"customMovement.h"
+
+1681301852 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt.h
+	"nnxt_Ports.h"
+	"nnxt_misc.h"
+	"nnxt_OnBoardPeriph.h"
+	"nnxt_config.h"
+	"nnxt_debug.h"
+	"stm32_adafruit_lcd.h"
+	"nnxt_os_glue.h"
+	"nnxt_shared_ds.h"
+
+1681301862 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_ports.h
+	<stdint.h>
+	"stm32f4xx_gpio.h"
+
+1681301868 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_gpio.h
+	"stm32f4xx.h"
+
+1681301860 g:\roboter\rb\uebung_3\libs\stm32 board\inc\stm32f4xx.h
+	"core_cm4.h"
+	"system_stm32f4xx.h"
+	<stdint.h>
+	"stm32f4xx_conf.h"
+
+1681301872 g:\roboter\rb\uebung_3\libs\stm32 board\cmsis\core_cm4.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+	<core_cm4_simd.h>
+
+1681301860 g:\roboter\rb\uebung_3\libs\stm32 board\cmsis\core_cminstr.h
+	<cmsis_iar.h>
+
+1681301860 g:\roboter\rb\uebung_3\libs\stm32 board\cmsis\core_cmfunc.h
+	<cmsis_iar.h>
+
+1681301872 g:\roboter\rb\uebung_3\libs\stm32 board\cmsis\core_cm4_simd.h
+	<cmsis_iar.h>
+
+1681301860 g:\roboter\rb\uebung_3\libs\stm32 board\inc\system_stm32f4xx.h
+
+1681301860 g:\roboter\rb\uebung_3\libs\stm32 board\inc\stm32f4xx_conf.h
+	"stm32f4xx_adc.h"
+	"stm32f4xx_can.h"
+	"stm32f4xx_crc.h"
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_dac.h"
+	"stm32f4xx_dbgmcu.h"
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_dma.h"
+	"stm32f4xx_exti.h"
+	"stm32f4xx_flash.h"
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_hash.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_iwdg.h"
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_spi.h"
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_tim.h"
+	"stm32f4xx_usart.h"
+	"stm32f4xx_wwdg.h"
+	"misc.h"
+
+1681301902 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_adc.h
+	"stm32f4xx.h"
+
+1681301868 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_can.h
+	"stm32f4xx.h"
+
+1681301868 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_crc.h
+	"stm32f4xx.h"
+
+1681301866 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_cryp.h
+	"stm32f4xx.h"
+
+1681301866 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dac.h
+	"stm32f4xx.h"
+
+1681301866 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dbgmcu.h
+	"stm32f4xx.h"
+
+1681301866 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dcmi.h
+	"stm32f4xx.h"
+
+1681301868 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_dma.h
+	"stm32f4xx.h"
+
+1681301868 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_exti.h
+	"stm32f4xx.h"
+
+1681301868 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_flash.h
+	"stm32f4xx.h"
+
+1681301868 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_fsmc.h
+	"stm32f4xx.h"
+
+1681301868 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_hash.h
+	"stm32f4xx.h"
+
+1681301874 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_i2c.h
+	"stm32f4xx.h"
+
+1681301874 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_iwdg.h
+	"stm32f4xx.h"
+
+1681301874 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_pwr.h
+	"stm32f4xx.h"
+
+1681301870 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_rcc.h
+	"stm32f4xx.h"
+
+1681301872 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_rng.h
+	"stm32f4xx.h"
+
+1681301868 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_rtc.h
+	"stm32f4xx.h"
+
+1681301882 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_sdio.h
+	"stm32f4xx.h"
+
+1681301882 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_spi.h
+	"stm32f4xx.h"
+
+1681301882 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_syscfg.h
+	"stm32f4xx.h"
+
+1681301870 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_tim.h
+	"stm32f4xx.h"
+
+1681301870 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_usart.h
+	"stm32f4xx.h"
+
+1681301870 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\stm32f4xx_wwdg.h
+	"stm32f4xx.h"
+
+1681301902 g:\roboter\rb\uebung_3\libs\stm32 board\spl\inc\misc.h
+	"stm32f4xx.h"
+
+1681301854 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_misc.h
+
+1681301854 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_onboardperiph.h
+	"stm32f4xx_gpio.h"
+	"nnxt_common.h"
+
+1681301852 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_common.h
+	"stm32f4xx_gpio.h"
+
+1681301852 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_config.h
+	"stdint.h"
+
+1681301854 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_debug.h
+	"nnxt_config.h"
+	"SEGGER_SYSVIEW.h"
+
+1681301848 g:\roboter\rb\uebung_3\libs\display\inc\stm32_adafruit_lcd.h
+	"st7735.h"
+	"fonts.h"
+
+1681301848 g:\roboter\rb\uebung_3\libs\display\inc\st7735.h
+	"lcd.h"
+
+1681301848 g:\roboter\rb\uebung_3\libs\display\inc\lcd.h
+	<stdint.h>
+
+1681301850 g:\roboter\rb\uebung_3\libs\display\inc\fonts.h
+	<stdint.h>
+
+1681301854 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_os_glue.h
+	<stdint.h>
+	"nnxt_config.h"
+	"stm32f4xx_tim.h"
+	"ee.h"
+	"FreeRTOS_glue.h"
+
+1681301848 g:\roboter\rb\uebung_3\libs\freertos\freertos_glue.h
+	"nnxt_os_glue.h"
+	"FreeRTOS.h"
+	"semphr.h"
+	"task.h"
+	"stm32f4xx.h"
+	"nnxt_shared_ds.h"
+	<stdint.h>
+
+1681301864 g:\roboter\rb\uebung_3\libs\freertos\source\include\freertos.h
+	<stddef.h>
+	<stdint.h>
+	"FreeRTOSConfig.h"
+	"projdefs.h"
+	"portable.h"
+	<reent.h>
+
+1681301848 g:\roboter\rb\uebung_3\libs\freertos\freertosconfig.h
+	"system_stm32f4xx.h"
+	<stdint.h>
+
+1681301864 g:\roboter\rb\uebung_3\libs\freertos\source\include\projdefs.h
+
+1681301864 g:\roboter\rb\uebung_3\libs\freertos\source\include\portable.h
+	"deprecated_definitions.h"
+	"portmacro.h"
+	"mpu_wrappers.h"
+
+1681301862 g:\roboter\rb\uebung_3\libs\freertos\source\include\deprecated_definitions.h
+	"..\..\Source\portable\owatcom\16bitdos\pc\portmacro.h"
+	"..\..\Source\portable\owatcom\16bitdos\flsh186\portmacro.h"
+	"../portable/GCC/ATMega323/portmacro.h"
+	"../portable/IAR/ATMega323/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC18F/portmacro.h"
+	"../../Source/portable/MPLAB/PIC32MX/portmacro.h"
+	"libFreeRTOS/Include/portmacro.h"
+	"../../Source/portable/SDCC/Cygnal/portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC2000/portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC23xx/portmacro.h"
+	"..\..\Source\portable\IAR\MSP430\portmacro.h"
+	"../../Source/portable/GCC/MSP430F449/portmacro.h"
+	"../../Source/portable/Rowley/MSP430F449/portmacro.h"
+	"..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91SAM7S/portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM7S64\portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM9XE\portmacro.h"
+	"..\..\Source\portable\IAR\LPC2000\portmacro.h"
+	"..\..\Source\portable\IAR\STR71x\portmacro.h"
+	"..\..\Source\portable\IAR\STR75x\portmacro.h"
+	"..\..\Source\portable\GCC\STR75x\portmacro.h"
+	"..\..\Source\portable\IAR\STR91x\portmacro.h"
+	"../../Source/portable/GCC/H8S2329/portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91FR40008/portmacro.h"
+	"../../Source/portable/RVDS/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/CodeWarrior/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MicroBlaze/portmacro.h"
+	"..\..\Source\portable\Paradigm\Tern_EE\small\portmacro.h"
+	"../../Source/portable/GCC/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MCF5235/portmacro.h"
+	"../../../Source/portable/GCC/ColdFire_V2/portmacro.h"
+	"../../Source/portable/CodeWarrior/ColdFire_V2/portmacro.h"
+	"../../Source/portable/GCC/PPC405_Xilinx/portmacro.h"
+	"../../Source/portable/GCC/PPC440_Xilinx/portmacro.h"
+	"..\..\Source\portable\Softune\MB96340\portmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\PC\prtmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\flsh186\prtmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+
+1681301866 g:\roboter\rb\uebung_3\libs\freertos\source\portable\portmacro.h
+
+1681301898 g:\roboter\rb\uebung_3\libs\freertos\source\include\mpu_wrappers.h
+
+1681301864 g:\roboter\rb\uebung_3\libs\freertos\source\include\semphr.h
+	"queue.h"
+
+1681301864 g:\roboter\rb\uebung_3\libs\freertos\source\include\queue.h
+
+1681301866 g:\roboter\rb\uebung_3\libs\freertos\source\include\task.h
+	"list.h"
+
+1681301864 g:\roboter\rb\uebung_3\libs\freertos\source\include\list.h
+
+1681301914 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_shared_ds.h
+	"nnxt_Ports.h"
+	"nnxt_OnBoardPeriph.h"
+	"nnxt_config.h"
+	"nnxt_os_glue.h"
+
+1681301844 g:\roboter\rb\uebung_3\custommovement.h
+
+1681301850 source:g:\roboter\rb\uebung_3\libs\display\src\font12.c
+	"fonts.h"
+
+1681301850 source:g:\roboter\rb\uebung_3\libs\display\src\font16.c
+	"fonts.h"
+
+1681301850 source:g:\roboter\rb\uebung_3\libs\display\src\font20.c
+	"fonts.h"
+
+1681301850 source:g:\roboter\rb\uebung_3\libs\display\src\st7735.c
+	"st7735.h"
+	"nnxt_display_glue.h"
+
+1681301854 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_display_glue.h
+	<stdint.h>
+
+1681301850 source:g:\roboter\rb\uebung_3\libs\display\src\stm32_adafruit_lcd.c
+	"stm32_adafruit_lcd.h"
+	"fonts.h"
+
+1681301848 source:g:\roboter\rb\uebung_3\libs\freertos\freertos_glue.c
+	"FreeRTOS_glue.h"
+	"portmacro.h"
+	<limits.h>
+	"nnxt.h"
+
+1681301850 source:g:\roboter\rb\uebung_3\libs\freertos\source\croutine.c
+	"FreeRTOS.h"
+	"task.h"
+	"croutine.h"
+
+1681301862 g:\roboter\rb\uebung_3\libs\freertos\source\include\croutine.h
+	"list.h"
+
+1681301850 source:g:\roboter\rb\uebung_3\libs\freertos\source\event_groups.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"event_groups.h"
+
+1681301866 g:\roboter\rb\uebung_3\libs\freertos\source\include\timers.h
+	"task.h"
+
+1681301862 g:\roboter\rb\uebung_3\libs\freertos\source\include\event_groups.h
+	"timers.h"
+
+1681301850 source:g:\roboter\rb\uebung_3\libs\freertos\source\heap_1.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+
+1681301850 source:g:\roboter\rb\uebung_3\libs\freertos\source\list.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"list.h"
+
+1681301866 source:g:\roboter\rb\uebung_3\libs\freertos\source\portable\port.c
+	"FreeRTOS.h"
+	"task.h"
+
+1681301850 source:g:\roboter\rb\uebung_3\libs\freertos\source\queue.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"croutine.h"
+
+1681301852 source:g:\roboter\rb\uebung_3\libs\freertos\source\tasks.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"StackMacros.h"
+	<stdio.h>
+	"tasks_test_access_functions.h"
+
+1681301864 g:\roboter\rb\uebung_3\libs\freertos\source\include\stackmacros.h
+
+1681301852 source:g:\roboter\rb\uebung_3\libs\freertos\source\timers.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"timers.h"
+
+1681301852 source:g:\roboter\rb\uebung_3\libs\hal\src\em_i2c.c
+	"em_i2c.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_gpio.h"
+	<stdio.h>
+
+1681301852 g:\roboter\rb\uebung_3\libs\hal\inc\em_i2c.h
+	"stm32f4xx_i2c.h"
+	"em_config.h"
+	<stdint.h>
+
+1681301852 g:\roboter\rb\uebung_3\libs\hal\inc\em_config.h
+	"nnxt_config.h"
+
+1681301852 source:g:\roboter\rb\uebung_3\libs\hal\src\em_interrupts.c
+	"em_interrupts.h"
+	"nnxt_misc.h"
+	"stm32f4xx_exti.h"
+	"nnxt_config.h"
+	"nnxt.h"
+	"nnxt_shared_ds.h"
+
+1681301852 g:\roboter\rb\uebung_3\libs\hal\inc\em_interrupts.h
+	"nnxt.h"
+
+1681301856 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_i2c.c
+	"em_i2c.h"
+	"nnxt_Ports.h"
+	<stdbool.h>
+	"nnxt_os_glue.h"
+	"stm32_adafruit_lcd.h"
+
+1681301856 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_misc.c
+	<stdint.h>
+	"nnxt_misc.h"
+	"nnxt.h"
+
+1681301856 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_motors.c
+	"stm32f4xx_gpio.h"
+	"nnxt_config.h"
+	"nnxt_Ports.h"
+	"stm32f4xx_tim.h"
+	"em_clk.h"
+	"stm32f4xx_exti.h"
+	"nnxt_common.h"
+
+1681301852 g:\roboter\rb\uebung_3\libs\hal\inc\em_clk.h
+	"stm32f4xx_rcc.h"
+
+1681301856 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_onboardperiph.c
+	"nnxt_config.h"
+	"nnxt_OnBoardPeriph.h"
+	"em_clk.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_tim.h"
+	"nnxt_common.h"
+	"nnxt_os_glue.h"
+
+1681301856 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_os_glue.c
+	"nnxt_os_glue.h"
+
+1681301856 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_pcf8574lb.c
+	"nnxt_i2c.h"
+	"nnxt_pcf8574lb.h"
+
+1681301854 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_i2c.h
+	"nnxt_Ports.h"
+
+1681301862 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_pcf8574lb.h
+
+1681301858 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_sdcard_glue.c
+	"nnxt_config.h"
+	"stm32f4xx_gpio.h"
+	"SpiDevice.h"
+	"diskio.h"
+	"stm32f4xx_tim.h"
+	"nnxt_os_glue.h"
+
+1681301858 g:\roboter\rb\uebung_3\libs\spi\inc\spidevice.h
+	"nnxt_config.h"
+
+1681301864 g:\roboter\rb\uebung_3\libs\sdcard\fatfs\inc\diskio.h
+	"ff.h"
+
+1681301864 g:\roboter\rb\uebung_3\libs\sdcard\fatfs\inc\ff.h
+	"ffconf.h"
+	<windows.h>
+	<stdint.h>
+
+1681301866 g:\roboter\rb\uebung_3\libs\sdcard\fatfs\inc\ffconf.h
+
+1681301858 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_sensors.c
+	"nnxt_Ports.h"
+	<stdint.h>
+	"nnxt_config.h"
+	"em_clk.h"
+	"nnxt_i2c.h"
+	<math.h>
+	"nnxt_misc.h"
+	"nnxt_common.h"
+	"stm32f4xx_dma.h"
+	"nnxt_os_glue.h"
+	"nnxt_Filter.h"
+
+1681301854 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_filter.h
+	<inttypes.h>
+
+1681301858 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_startup.c
+	"nnxt_Ports.h"
+	"nnxt_i2c.h"
+	"nnxt_config.h"
+	"system_stm32f4xx.h"
+	"stm32f4xx.h"
+	"nnxt_OnBoardPeriph.h"
+	"misc.h"
+	"nnxt_misc.h"
+	"nnxt.h"
+	"SpiDevice.h"
+	"nnxt_sdcard_glue.h"
+	"stm32f4xx_tim.h"
+	"ff.h"
+
+1681301864 g:\roboter\rb\uebung_3\libs\nnxt\inc\nnxt_sdcard_glue.h
+
+1681301872 source:g:\roboter\rb\uebung_3\libs\sdcard\fatfs\src\ff.c
+	"ff.h"
+	"diskio.h"
+	<stdarg.h>
+
+1681301866 source:g:\roboter\rb\uebung_3\libs\sdcard\fatfs\src\ffsystem.c
+	"ff.h"
+
+1681301902 source:g:\roboter\rb\uebung_3\libs\sdcard\fatfs\src\ffunicode.c
+	"ff.h"
+
+1681301858 source:g:\roboter\rb\uebung_3\libs\spi\src\spidevice.c
+	"stm32f4xx_spi.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+	"SpiDevice.h"
+	"nnxt_os_glue.h"
+
+1681301870 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\misc.c
+	"misc.h"
+
+1681301870 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_adc.c
+	"stm32f4xx_adc.h"
+	"stm32f4xx_rcc.h"
+
+1681301870 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_can.c
+	"stm32f4xx_can.h"
+	"stm32f4xx_rcc.h"
+
+1681301872 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_crc.c
+	"stm32f4xx_crc.h"
+
+1681301870 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp.c
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_rcc.h"
+
+1681301870 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp_aes.c
+	"stm32f4xx_cryp.h"
+
+1681301872 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp_des.c
+	"stm32f4xx_cryp.h"
+
+1681301872 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_cryp_tdes.c
+	"stm32f4xx_cryp.h"
+
+1681301872 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dac.c
+	"stm32f4xx_dac.h"
+	"stm32f4xx_rcc.h"
+
+1681301902 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dbgmcu.c
+	"stm32f4xx_dbgmcu.h"
+
+1681301902 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dcmi.c
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_rcc.h"
+
+1681301872 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_dma.c
+	"stm32f4xx_dma.h"
+	"stm32f4xx_rcc.h"
+
+1681301872 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_exti.c
+	"stm32f4xx_exti.h"
+
+1681301882 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_flash.c
+	"stm32f4xx_flash.h"
+
+1681301872 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_fsmc.c
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_rcc.h"
+
+1681301904 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_gpio.c
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+
+1681301904 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_hash.c
+	"stm32f4xx_hash.h"
+	"stm32f4xx_rcc.h"
+
+1681301904 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_hash_md5.c
+	"stm32f4xx_hash.h"
+
+1681301878 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_hash_sha1.c
+	"stm32f4xx_hash.h"
+
+1681301878 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_i2c.c
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_rcc.h"
+
+1681301874 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_iwdg.c
+	"stm32f4xx_iwdg.h"
+
+1681301876 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_pwr.c
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+
+1681301874 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_rcc.c
+	"stm32f4xx_rcc.h"
+
+1681301876 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_rng.c
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rcc.h"
+
+1681301876 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_rtc.c
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_rcc.h"
+
+1681301874 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_sdio.c
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_rcc.h"
+
+1681301874 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_spi.c
+	"stm32f4xx_spi.h"
+	"stm32f4xx_rcc.h"
+
+1681301876 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_syscfg.c
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_rcc.h"
+
+1681301876 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_tim.c
+	"stm32f4xx_tim.h"
+	"stm32f4xx_rcc.h"
+
+1681301876 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_usart.c
+	"stm32f4xx_usart.h"
+	"stm32f4xx_rcc.h"
+
+1681301876 source:g:\roboter\rb\uebung_3\libs\stm32 board\spl\src\stm32f4xx_wwdg.c
+	"stm32f4xx_wwdg.h"
+	"stm32f4xx_rcc.h"
+
+1681301860 source:g:\roboter\rb\uebung_3\libs\stm32 board\src\startup_stm32f4xx.s
+
+1681301860 source:g:\roboter\rb\uebung_3\libs\stm32 board\src\system_stm32f4xx.c
+	"stm32f4xx.h"
+
+1681817505 source:g:\roboter\rb\uebung_3\main.c
+	"nnxt.h"
+	"customMovement.h"
+	"stdio.h"
+
+1681301894 source:g:\roboter\rb\uebung_3\libs\display\src\font24.c
+	"fonts.h"
+
+1681301894 source:g:\roboter\rb\uebung_3\libs\display\src\font8.c
+	"fonts.h"
+
+1681301914 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_display_glue.c
+	"nnxt_display_glue.h"
+	"SpiDevice.h"
+	"nnxt.h"
+	"stm32f4xx_gpio.h"
+	"nnxt_config.h"
+	"em_clk.h"
+
+1681301914 source:g:\roboter\rb\uebung_3\libs\nnxt\src\nnxt_filter.c
+	"nnxt_Filter.h"
+
+1681906566 c:\users\krf42279\downloads\uebung_3\timer.h
+
+1681906566 source:c:\users\krf42279\downloads\uebung_3\timer.c
+	"nnxt.h"
+	"timer.h"
+
+1682418418 source:g:\roboter\rb\uebung_3_3\libs\display\src\font12.c
+	"fonts.h"
+
+1682418436 g:\roboter\rb\uebung_3_3\libs\display\inc\fonts.h
+	<stdint.h>
+
+1682418418 source:g:\roboter\rb\uebung_3_3\libs\display\src\font16.c
+	"fonts.h"
+
+1682418418 source:g:\roboter\rb\uebung_3_3\libs\display\src\font20.c
+	"fonts.h"
+
+1682418422 source:g:\roboter\rb\uebung_3_3\libs\display\src\font24.c
+	"fonts.h"
+
+1682418420 source:g:\roboter\rb\uebung_3_3\libs\display\src\font8.c
+	"fonts.h"
+
+1682418426 source:g:\roboter\rb\uebung_3_3\libs\display\src\st7735.c
+	"st7735.h"
+	"nnxt_display_glue.h"
+
+1682418418 g:\roboter\rb\uebung_3_3\libs\display\inc\st7735.h
+	"lcd.h"
+
+1682418418 g:\roboter\rb\uebung_3_3\libs\display\inc\lcd.h
+	<stdint.h>
+
+1682418426 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_display_glue.h
+	<stdint.h>
+
+1682418462 source:g:\roboter\rb\uebung_3_3\libs\display\src\stm32_adafruit_lcd.c
+	"stm32_adafruit_lcd.h"
+	"fonts.h"
+
+1682418418 g:\roboter\rb\uebung_3_3\libs\display\inc\stm32_adafruit_lcd.h
+	"st7735.h"
+	"fonts.h"
+
+1682418416 source:g:\roboter\rb\uebung_3_3\libs\freertos\freertos_glue.c
+	"FreeRTOS_glue.h"
+	"portmacro.h"
+	<limits.h>
+	"nnxt.h"
+
+1682418416 g:\roboter\rb\uebung_3_3\libs\freertos\freertos_glue.h
+	"nnxt_os_glue.h"
+	"FreeRTOS.h"
+	"semphr.h"
+	"task.h"
+	"stm32f4xx.h"
+	"nnxt_shared_ds.h"
+	<stdint.h>
+
+1682418438 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_os_glue.h
+	<stdint.h>
+	"nnxt_config.h"
+	"stm32f4xx_tim.h"
+	"ee.h"
+	"FreeRTOS_glue.h"
+
+1682418434 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_config.h
+	"stdint.h"
+
+1682418448 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_tim.h
+	"stm32f4xx.h"
+
+1682418432 g:\roboter\rb\uebung_3_3\libs\stm32 board\inc\stm32f4xx.h
+	"core_cm4.h"
+	"system_stm32f4xx.h"
+	<stdint.h>
+	"stm32f4xx_conf.h"
+
+1682418432 g:\roboter\rb\uebung_3_3\libs\stm32 board\cmsis\core_cm4.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+	<core_cm4_simd.h>
+
+1682418432 g:\roboter\rb\uebung_3_3\libs\stm32 board\cmsis\core_cminstr.h
+	<cmsis_iar.h>
+
+1682418432 g:\roboter\rb\uebung_3_3\libs\stm32 board\cmsis\core_cmfunc.h
+	<cmsis_iar.h>
+
+1682418432 g:\roboter\rb\uebung_3_3\libs\stm32 board\cmsis\core_cm4_simd.h
+	<cmsis_iar.h>
+
+1682418432 g:\roboter\rb\uebung_3_3\libs\stm32 board\inc\system_stm32f4xx.h
+
+1682418432 g:\roboter\rb\uebung_3_3\libs\stm32 board\inc\stm32f4xx_conf.h
+	"stm32f4xx_adc.h"
+	"stm32f4xx_can.h"
+	"stm32f4xx_crc.h"
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_dac.h"
+	"stm32f4xx_dbgmcu.h"
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_dma.h"
+	"stm32f4xx_exti.h"
+	"stm32f4xx_flash.h"
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_hash.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_iwdg.h"
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_spi.h"
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_tim.h"
+	"stm32f4xx_usart.h"
+	"stm32f4xx_wwdg.h"
+	"misc.h"
+
+1682418440 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_adc.h
+	"stm32f4xx.h"
+
+1682418450 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_can.h
+	"stm32f4xx.h"
+
+1682418450 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_crc.h
+	"stm32f4xx.h"
+
+1682418442 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_cryp.h
+	"stm32f4xx.h"
+
+1682418442 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_dac.h
+	"stm32f4xx.h"
+
+1682418442 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_dbgmcu.h
+	"stm32f4xx.h"
+
+1682418442 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_dcmi.h
+	"stm32f4xx.h"
+
+1682418442 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_dma.h
+	"stm32f4xx.h"
+
+1682418442 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_exti.h
+	"stm32f4xx.h"
+
+1682418442 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_flash.h
+	"stm32f4xx.h"
+
+1682418444 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_fsmc.h
+	"stm32f4xx.h"
+
+1682418444 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_hash.h
+	"stm32f4xx.h"
+
+1682418444 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_gpio.h
+	"stm32f4xx.h"
+
+1682418448 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_i2c.h
+	"stm32f4xx.h"
+
+1682418456 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_iwdg.h
+	"stm32f4xx.h"
+
+1682418458 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_pwr.h
+	"stm32f4xx.h"
+
+1682418444 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_rcc.h
+	"stm32f4xx.h"
+
+1682419954 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_rng.h
+	"stm32f4xx.h"
+
+1682419954 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_rtc.h
+	"stm32f4xx.h"
+
+1682419954 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_sdio.h
+	"stm32f4xx.h"
+
+1682418446 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_spi.h
+	"stm32f4xx.h"
+
+1682418446 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_syscfg.h
+	"stm32f4xx.h"
+
+1682418446 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_usart.h
+	"stm32f4xx.h"
+
+1682418446 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\stm32f4xx_wwdg.h
+	"stm32f4xx.h"
+
+1682418440 g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\inc\misc.h
+	"stm32f4xx.h"
+
+1682418436 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\freertos.h
+	<stddef.h>
+	<stdint.h>
+	"FreeRTOSConfig.h"
+	"projdefs.h"
+	"portable.h"
+	<reent.h>
+
+1682418414 g:\roboter\rb\uebung_3_3\libs\freertos\freertosconfig.h
+	"system_stm32f4xx.h"
+	<stdint.h>
+
+1682418444 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\projdefs.h
+
+1682418444 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\portable.h
+	"deprecated_definitions.h"
+	"portmacro.h"
+	"mpu_wrappers.h"
+
+1682418436 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\deprecated_definitions.h
+	"..\..\Source\portable\owatcom\16bitdos\pc\portmacro.h"
+	"..\..\Source\portable\owatcom\16bitdos\flsh186\portmacro.h"
+	"../portable/GCC/ATMega323/portmacro.h"
+	"../portable/IAR/ATMega323/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC18F/portmacro.h"
+	"../../Source/portable/MPLAB/PIC32MX/portmacro.h"
+	"libFreeRTOS/Include/portmacro.h"
+	"../../Source/portable/SDCC/Cygnal/portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC2000/portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC23xx/portmacro.h"
+	"..\..\Source\portable\IAR\MSP430\portmacro.h"
+	"../../Source/portable/GCC/MSP430F449/portmacro.h"
+	"../../Source/portable/Rowley/MSP430F449/portmacro.h"
+	"..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91SAM7S/portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM7S64\portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM9XE\portmacro.h"
+	"..\..\Source\portable\IAR\LPC2000\portmacro.h"
+	"..\..\Source\portable\IAR\STR71x\portmacro.h"
+	"..\..\Source\portable\IAR\STR75x\portmacro.h"
+	"..\..\Source\portable\GCC\STR75x\portmacro.h"
+	"..\..\Source\portable\IAR\STR91x\portmacro.h"
+	"../../Source/portable/GCC/H8S2329/portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91FR40008/portmacro.h"
+	"../../Source/portable/RVDS/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/CodeWarrior/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MicroBlaze/portmacro.h"
+	"..\..\Source\portable\Paradigm\Tern_EE\small\portmacro.h"
+	"../../Source/portable/GCC/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MCF5235/portmacro.h"
+	"../../../Source/portable/GCC/ColdFire_V2/portmacro.h"
+	"../../Source/portable/CodeWarrior/ColdFire_V2/portmacro.h"
+	"../../Source/portable/GCC/PPC405_Xilinx/portmacro.h"
+	"../../Source/portable/GCC/PPC440_Xilinx/portmacro.h"
+	"..\..\Source\portable\Softune\MB96340\portmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\PC\prtmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\flsh186\prtmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+
+1682418440 g:\roboter\rb\uebung_3_3\libs\freertos\source\portable\portmacro.h
+
+1682418436 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\mpu_wrappers.h
+
+1682418438 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\semphr.h
+	"queue.h"
+
+1682418438 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\queue.h
+
+1682418438 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\task.h
+	"list.h"
+
+1682418436 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\list.h
+
+1682418428 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_shared_ds.h
+	"nnxt_Ports.h"
+	"nnxt_OnBoardPeriph.h"
+	"nnxt_config.h"
+	"nnxt_os_glue.h"
+
+1682418490 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_ports.h
+	<stdint.h>
+	"stm32f4xx_gpio.h"
+
+1682418426 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_onboardperiph.h
+	"stm32f4xx_gpio.h"
+	"nnxt_common.h"
+
+1682418426 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_common.h
+	"stm32f4xx_gpio.h"
+
+1682418424 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt.h
+	"nnxt_Ports.h"
+	"nnxt_misc.h"
+	"nnxt_OnBoardPeriph.h"
+	"nnxt_config.h"
+	"nnxt_debug.h"
+	"stm32_adafruit_lcd.h"
+	"nnxt_os_glue.h"
+	"nnxt_shared_ds.h"
+
+1682418426 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_misc.h
+
+1682418438 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_debug.h
+	"nnxt_config.h"
+	"SEGGER_SYSVIEW.h"
+
+1682418436 source:g:\roboter\rb\uebung_3_3\libs\freertos\source\croutine.c
+	"FreeRTOS.h"
+	"task.h"
+	"croutine.h"
+
+1682418436 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\croutine.h
+	"list.h"
+
+1682418436 source:g:\roboter\rb\uebung_3_3\libs\freertos\source\event_groups.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"event_groups.h"
+
+1682418438 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\timers.h
+	"task.h"
+
+1682418436 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\event_groups.h
+	"timers.h"
+
+1682418422 source:g:\roboter\rb\uebung_3_3\libs\freertos\source\heap_1.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+
+1682418422 source:g:\roboter\rb\uebung_3_3\libs\freertos\source\list.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"list.h"
+
+1682418438 source:g:\roboter\rb\uebung_3_3\libs\freertos\source\portable\port.c
+	"FreeRTOS.h"
+	"task.h"
+
+1682418422 source:g:\roboter\rb\uebung_3_3\libs\freertos\source\queue.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"croutine.h"
+
+1682418422 source:g:\roboter\rb\uebung_3_3\libs\freertos\source\tasks.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"StackMacros.h"
+	<stdio.h>
+	"tasks_test_access_functions.h"
+
+1682418438 g:\roboter\rb\uebung_3_3\libs\freertos\source\include\stackmacros.h
+
+1682418422 source:g:\roboter\rb\uebung_3_3\libs\freertos\source\timers.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"timers.h"
+
+1682418424 source:g:\roboter\rb\uebung_3_3\libs\hal\src\em_i2c.c
+	"em_i2c.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_gpio.h"
+	<stdio.h>
+
+1682418438 g:\roboter\rb\uebung_3_3\libs\hal\inc\em_i2c.h
+	"stm32f4xx_i2c.h"
+	"em_config.h"
+	<stdint.h>
+
+1682418438 g:\roboter\rb\uebung_3_3\libs\hal\inc\em_config.h
+	"nnxt_config.h"
+
+1682418424 source:g:\roboter\rb\uebung_3_3\libs\hal\src\em_interrupts.c
+	"em_interrupts.h"
+	"nnxt_misc.h"
+	"stm32f4xx_exti.h"
+	"nnxt_config.h"
+	"nnxt.h"
+	"nnxt_shared_ds.h"
+
+1682418424 g:\roboter\rb\uebung_3_3\libs\hal\inc\em_interrupts.h
+	"nnxt.h"
+
+1682418428 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_display_glue.c
+	"nnxt_display_glue.h"
+	"SpiDevice.h"
+	"nnxt.h"
+	"stm32f4xx_gpio.h"
+	"nnxt_config.h"
+	"em_clk.h"
+
+1682418430 g:\roboter\rb\uebung_3_3\libs\spi\inc\spidevice.h
+	"nnxt_config.h"
+
+1682418422 g:\roboter\rb\uebung_3_3\libs\hal\inc\em_clk.h
+	"stm32f4xx_rcc.h"
+
+1682418428 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_filter.c
+	"nnxt_Filter.h"
+
+1682418438 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_filter.h
+	<inttypes.h>
+
+1682418428 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_i2c.c
+	"em_i2c.h"
+	"nnxt_Ports.h"
+	<stdbool.h>
+	"nnxt_os_glue.h"
+	"stm32_adafruit_lcd.h"
+
+1682418448 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_misc.c
+	<stdint.h>
+	"nnxt_misc.h"
+	"nnxt.h"
+
+1682418430 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_motors.c
+	"stm32f4xx_gpio.h"
+	"nnxt_config.h"
+	"nnxt_Ports.h"
+	"stm32f4xx_tim.h"
+	"em_clk.h"
+	"stm32f4xx_exti.h"
+	"nnxt_common.h"
+
+1682418438 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_onboardperiph.c
+	"nnxt_config.h"
+	"nnxt_OnBoardPeriph.h"
+	"em_clk.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_tim.h"
+	"nnxt_common.h"
+	"nnxt_os_glue.h"
+
+1682418430 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_os_glue.c
+	"nnxt_os_glue.h"
+
+1682418430 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_pcf8574lb.c
+	"nnxt_i2c.h"
+	"nnxt_pcf8574lb.h"
+
+1682418462 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_i2c.h
+	"nnxt_Ports.h"
+
+1682418490 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_pcf8574lb.h
+
+1682418430 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_sdcard_glue.c
+	"nnxt_config.h"
+	"stm32f4xx_gpio.h"
+	"SpiDevice.h"
+	"diskio.h"
+	"stm32f4xx_tim.h"
+	"nnxt_os_glue.h"
+
+1682418440 g:\roboter\rb\uebung_3_3\libs\sdcard\fatfs\inc\diskio.h
+	"ff.h"
+
+1682418440 g:\roboter\rb\uebung_3_3\libs\sdcard\fatfs\inc\ff.h
+	"ffconf.h"
+	<windows.h>
+	<stdint.h>
+
+1682418440 g:\roboter\rb\uebung_3_3\libs\sdcard\fatfs\inc\ffconf.h
+
+1682418430 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_sensors.c
+	"nnxt_Ports.h"
+	<stdint.h>
+	"nnxt_config.h"
+	"em_clk.h"
+	"nnxt_i2c.h"
+	<math.h>
+	"nnxt_misc.h"
+	"nnxt_common.h"
+	"stm32f4xx_dma.h"
+	"nnxt_os_glue.h"
+	"nnxt_Filter.h"
+
+1682418430 source:g:\roboter\rb\uebung_3_3\libs\nnxt\src\nnxt_startup.c
+	"nnxt_Ports.h"
+	"nnxt_i2c.h"
+	"nnxt_config.h"
+	"system_stm32f4xx.h"
+	"stm32f4xx.h"
+	"nnxt_OnBoardPeriph.h"
+	"misc.h"
+	"nnxt_misc.h"
+	"nnxt.h"
+	"SpiDevice.h"
+	"nnxt_sdcard_glue.h"
+	"stm32f4xx_tim.h"
+	"ff.h"
+
+1682418428 g:\roboter\rb\uebung_3_3\libs\nnxt\inc\nnxt_sdcard_glue.h
+
+1682418440 source:g:\roboter\rb\uebung_3_3\libs\sdcard\fatfs\src\ff.c
+	"ff.h"
+	"diskio.h"
+	<stdarg.h>
+
+1682418440 source:g:\roboter\rb\uebung_3_3\libs\sdcard\fatfs\src\ffsystem.c
+	"ff.h"
+
+1682418440 source:g:\roboter\rb\uebung_3_3\libs\sdcard\fatfs\src\ffunicode.c
+	"ff.h"
+
+1682418446 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\misc.c
+	"misc.h"
+
+1682418456 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_adc.c
+	"stm32f4xx_adc.h"
+	"stm32f4xx_rcc.h"
+
+1682418458 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_can.c
+	"stm32f4xx_can.h"
+	"stm32f4xx_rcc.h"
+
+1682418458 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_crc.c
+	"stm32f4xx_crc.h"
+
+1682418448 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_cryp.c
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_rcc.h"
+
+1682418448 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_cryp_aes.c
+	"stm32f4xx_cryp.h"
+
+1682418448 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_cryp_des.c
+	"stm32f4xx_cryp.h"
+
+1682418450 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_cryp_tdes.c
+	"stm32f4xx_cryp.h"
+
+1682418452 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_dac.c
+	"stm32f4xx_dac.h"
+	"stm32f4xx_rcc.h"
+
+1682418448 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_dbgmcu.c
+	"stm32f4xx_dbgmcu.h"
+
+1682418448 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_dcmi.c
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_rcc.h"
+
+1682418448 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_dma.c
+	"stm32f4xx_dma.h"
+	"stm32f4xx_rcc.h"
+
+1682418448 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_exti.c
+	"stm32f4xx_exti.h"
+
+1682418468 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_flash.c
+	"stm32f4xx_flash.h"
+
+1682418454 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_fsmc.c
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_rcc.h"
+
+1682418450 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_gpio.c
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+
+1682418460 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_hash.c
+	"stm32f4xx_hash.h"
+	"stm32f4xx_rcc.h"
+
+1682418460 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_hash_md5.c
+	"stm32f4xx_hash.h"
+
+1682418450 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_hash_sha1.c
+	"stm32f4xx_hash.h"
+
+1682418494 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_i2c.c
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_rcc.h"
+
+1682418450 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_iwdg.c
+	"stm32f4xx_iwdg.h"
+
+1682418450 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_pwr.c
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+
+1682418450 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_rcc.c
+	"stm32f4xx_rcc.h"
+
+1682418474 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_rng.c
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rcc.h"
+
+1682418474 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_rtc.c
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_rcc.h"
+
+1682418452 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_sdio.c
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_rcc.h"
+
+1682418470 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_spi.c
+	"stm32f4xx_spi.h"
+	"stm32f4xx_rcc.h"
+
+1682418470 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_syscfg.c
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_rcc.h"
+
+1682418454 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_tim.c
+	"stm32f4xx_tim.h"
+	"stm32f4xx_rcc.h"
+
+1682418456 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_usart.c
+	"stm32f4xx_usart.h"
+	"stm32f4xx_rcc.h"
+
+1682418454 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\spl\src\stm32f4xx_wwdg.c
+	"stm32f4xx_wwdg.h"
+	"stm32f4xx_rcc.h"
+
+1682418434 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\src\startup_stm32f4xx.s
+
+1682418434 source:g:\roboter\rb\uebung_3_3\libs\stm32 board\src\system_stm32f4xx.c
+	"stm32f4xx.h"
+
+1682418416 source:g:\roboter\rb\uebung_3_3\timer.c
+	"nnxt.h"
+	"timer.h"
+
+1682418448 g:\roboter\rb\uebung_3_3\timer.h
+
+1683028071 source:g:\roboter\rb\uebung_3_3\custommovement.c
+	"nnxt.h"
+	"customMovement.h"
+
+1682418424 g:\roboter\rb\uebung_3_3\custommovement.h
+
+1682418492 source:g:\roboter\rb\uebung_3_3\libs\spi\src\spidevice.c
+	"stm32f4xx_spi.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+	"SpiDevice.h"
+	"nnxt_os_glue.h"
+
+1683029470 source:g:\roboter\rb\uebung_3_3\main.c
+	"nnxt.h"
+	"customMovement.h"
+	"stdio.h"
+	"timer.h"
+

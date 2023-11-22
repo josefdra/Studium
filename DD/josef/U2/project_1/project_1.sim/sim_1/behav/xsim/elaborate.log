@@ -1,7 +1,0 @@
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 4fad5ab6d834457cbfab55216db9114c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot TB_MODULE_behav xil_defaultlib.TB_MODULE -log elaborate.log 
-Using 8 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-3354] formal port 'bin' of mode inout cannot be associated with actual port 'bin' of mode in [/media/sf_Sync/DD/josef/U2/project_1/project_1.srcs/sources_1/imports/hdl/module.vhd:12]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_module in library work failed.
