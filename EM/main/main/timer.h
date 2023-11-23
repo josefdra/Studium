@@ -67,10 +67,10 @@ ISR(TIMER1_OVF_vect){
 				counter_intern++;
 				if(counter_intern == 1000){
 					timers[i].counter++;
-					if(timers[i].counter == timers[0].duration){
+					if(timers[i].counter == timers[i].duration){
 						cli();
 						timers[i].counter = 0;
-						timers[0].running = 0;
+						timers[i].running = 0;
 						setEvent(timer_event[i]);
 						sei();
 					}
@@ -78,10 +78,10 @@ ISR(TIMER1_OVF_vect){
 				}
 			} else {
 				timers[i].counter++;
-				if(timers[i].counter == timers[0].duration){
+				if(timers[i].counter == timers[i].duration){
 					cli();
 					timers[i].counter = 0;
-					timers[0].running = 0;
+					timers[i].running = 0;
 					setEvent(timer_event[i]);
 					sei();
 				}
