@@ -12,17 +12,8 @@
 #include <stdint.h>
 #include <avr/interrupt.h>
 #include <stdlib.h>
-#include "event.h"
 
 uint16_t counter_intern = 0;
-
-static uint16_t timer_event[] = {
-	0x0010,
-	0x0020,
-	0x0040,
-	0x0080,
-	0x0100
-};
 
 struct s_timer
 {
@@ -64,26 +55,26 @@ ISR(TIMER1_OVF_vect){
 	for(int i = 0; i < 5; i++){
 		if(timers[i].running == 1){
 			if(timers[i].multiply == 1){
-				counter_intern++;
-				if(counter_intern == 1000){
-					timers[i].counter++;
-					if(timers[i].counter == timers[i].duration){
+				counter_intern++;				
+				if(counter_intern > 1000){
+					timers[i].counter++;									
+					if(timers[i].counter == timers[i].duration){						
 						cli();
 						timers[i].counter = 0;
 						timers[i].running = 0;
-						setEvent(timer_event[i]);
 						sei();
+						timers[i].callback;						
 					}
 					counter_intern = 0;
 				}
 			} else {
-				timers[i].counter++;
-				if(timers[i].counter == timers[i].duration){
+				timers[i].counter++;				
+				if(timers[i].counter == timers[i].duration){					
 					cli();
 					timers[i].counter = 0;
 					timers[i].running = 0;
-					setEvent(timer_event[i]);
 					sei();
+					timers[i].callback;
 				}
 			}
 		}

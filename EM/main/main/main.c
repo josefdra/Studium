@@ -28,22 +28,33 @@ volatile uint8_t safe;
 volatile uint8_t var;
 volatile uint8_t helper;
 volatile uint8_t start_pressed = 0;
+volatile uint8_t var_old;
 
 void change_var(){
-	setEvent((VAR_CHANGED));
+	var++;
 	startTimer(0);
 }
 
-void check_buttons_and_overflow(){
+void check_buttons_and_overflow(){	
 	if(~PINC & 0x01){
-		setEvent(RESET);
+		safe = (PIND & 0x03);
+		safe |= ((PIND & 0x20) >> 3);
+		var = safe;
+		PORTB = 0x07;
 	}
 	if(~PIND & 0x04){
-		setEvent(START);
+		if(var != var_old){
+			helper &= 0xF8;
+			helper |= var;
+			PORTB = helper;
+			helper = PORTB;
+			var_old = var;
+		}		
 	}
 	if(var == 8){
-		setEvent(OVERFLOW);
+		var = safe;
 	}
+	var_old = var;
 	startTimer(1);
 }
 
@@ -64,34 +75,12 @@ int main(void)
 	safe |= ((PIND & 0x20) >> 3);
 	var = safe;
 	declareTimer_milli(change_var, 1000, 0);
-	declareTimer_milli(check_buttons_and_overflow, 50, 1);
+	declareTimer_milli(check_buttons_and_overflow, 5, 1);
 	startTimer(0);
 	startTimer(1);
 	
 	while(1)
 	{
-		if(eventIsSet(START))
-		{		
-			clearEvent(START);
-			while(!eventIsSet(RESET)){				
-				if(eventIsSet(VAR_CHANGED)){
-					clearEvent(VAR_CHANGED);
-					helper &= 0xF8;
-					helper |= var;
-					PORTB = helper;
-					helper = PORTB;
-					var++;
-				}
-				if (eventIsSet(OVERFLOW)){
-					clearEvent(OVERFLOW);
-					var = safe;
-				}
-			}
-			clearEvent(RESET);
-			safe = (PIND & 0x03);
-			safe |= ((PIND & 0x20) >> 3);
-			var = safe;
-			PORTB = 0x07;
-		}
+		
 	}
 }
