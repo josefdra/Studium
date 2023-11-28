@@ -56,25 +56,31 @@ ISR(TIMER1_OVF_vect){
 		if(timers[i].running == 1){
 			if(timers[i].multiply == 1){
 				counter_intern++;				
-				if(counter_intern > 1000){
-					timers[i].counter++;									
-					if(timers[i].counter == timers[i].duration){						
+				if(counter_intern == 1000){
+					timers[i].counter++;
+					PORTB &= 0x00;					
+					if(timers[i].counter > timers[i].duration){	
 						cli();
 						timers[i].counter = 0;
 						timers[i].running = 0;
-						sei();
-						timers[i].callback;						
+						
+						if (timers[i].callback!=NULL){
+							sei();
+							timers[i].callback();
+						}
 					}
-					counter_intern = 0;
+					if (counter_intern == 1000){
+						counter_intern = 0;
+					}
 				}
 			} else {
-				timers[i].counter++;				
+				timers[i].counter++;	
 				if(timers[i].counter == timers[i].duration){					
 					cli();
 					timers[i].counter = 0;
 					timers[i].running = 0;
 					sei();
-					timers[i].callback;
+					timers[i].callback();
 				}
 			}
 		}

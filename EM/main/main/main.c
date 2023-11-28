@@ -29,6 +29,8 @@ volatile uint8_t var;
 volatile uint8_t helper;
 volatile uint8_t start_pressed = 0;
 volatile uint8_t var_old;
+volatile uint8_t reset_is_pressed = 0;
+
 
 void change_var(){
 	var++;
@@ -37,19 +39,29 @@ void change_var(){
 
 void check_buttons_and_overflow(){	
 	if(~PINC & 0x01){
+		reset_is_pressed = 1;
+		start_pressed = 0;
+		
+	}
+	if(~PIND & 0x04){
+		start_pressed = 1;
+		reset_is_pressed = 0;
+		
+	}
+	if (reset_is_pressed){
 		safe = (PIND & 0x03);
 		safe |= ((PIND & 0x20) >> 3);
 		var = safe;
 		PORTB = 0x07;
 	}
-	if(~PIND & 0x04){
-		if(var != var_old){
+	if (start_pressed){
+		//if(var != var_old){
 			helper &= 0xF8;
 			helper |= var;
 			PORTB = helper;
 			helper = PORTB;
 			var_old = var;
-		}		
+			//}
 	}
 	if(var == 8){
 		var = safe;
@@ -65,17 +77,17 @@ int main(void)
 	helper = PORTB;
 	PORTB |= 0x0F;
 	DDRC = 0x02;	
-	DDRB = 0x0F;	
-	TCCR1B &= ~((1<<CS02)|(1<<CS01)|(1<<CS00));
+	DDRB = 0x0F;
+	TCNT1 = 254;	
+	TCCR1B &= ~((1<<CS12)|(1<<CS11)|(1<<CS10));
 	TCCR1B |= (1<<CS11);
 	TIMSK1 |= (1<<TOIE0);
-	TCNT1 = 254;
 	sei();
 	safe = (PIND & 0x03);
 	safe |= ((PIND & 0x20) >> 3);
 	var = safe;
 	declareTimer_milli(change_var, 1000, 0);
-	declareTimer_milli(check_buttons_and_overflow, 5, 1);
+	declareTimer_milli(check_buttons_and_overflow, 50, 1);
 	startTimer(0);
 	startTimer(1);
 	
