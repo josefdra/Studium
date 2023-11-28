@@ -22,27 +22,44 @@
    PORTD5 = A7
    Analog A0 = A3
    PORTD2 = A4
+   
+   Koffer nicht benutzen: 7, 17, 13
+   Koffer geht: 19
 */
 
 volatile uint8_t safe;
 volatile uint8_t var;
 volatile uint8_t helper;
-volatile uint8_t start_pressed = 0;
+volatile uint8_t var_old;
+
 
 void change_var(){
-	setEvent((VAR_CHANGED));
+	var++;
 	startTimer(0);
 }
 
-void check_buttons_and_overflow(){
+void check_buttons_and_overflow(){	
 	if(~PINC & 0x01){
-		setEvent(RESET);
+		cli();
+		cancelTimer(0);
+		safe = (PIND & 0x03);
+		safe |= ((PIND & 0x20) >> 3);
+		var = safe;
+		PORTB = 0x07;
+		sei();
 	}
 	if(~PIND & 0x04){
-		setEvent(START);
+		startTimer(0);		
+	}
+	if (timerRunning(0) && var != var_old){		
+		helper &= 0xF8;
+		helper |= var;
+		PORTB = helper;
+		helper = PORTB;
+		var_old = var;		
 	}
 	if(var == 8){
-		setEvent(OVERFLOW);
+		var, var_old = safe;
 	}
 	startTimer(1);
 }
@@ -54,44 +71,21 @@ int main(void)
 	helper = PORTB;
 	PORTB |= 0x0F;
 	DDRC = 0x02;	
-	DDRB = 0x0F;	
-	TCCR1B &= ~((1<<CS02)|(1<<CS01)|(1<<CS00));
-	TCCR1B |= (1<<CS11);
-	TIMSK1 |= (1<<TOIE0);
-	TCNT1 = 254;
+	DDRB = 0x0F;
+	TCNT1 = 65285;
+	TCCR1B &= ~((1<<CS12)|(1<<CS11)|(1<<CS10));
+	TCCR1B |= (1<<CS11)|(1<<CS10);
+	TIMSK1 |= (1<<TOIE1);
 	sei();
 	safe = (PIND & 0x03);
 	safe |= ((PIND & 0x20) >> 3);
-	var = safe;
-	declareTimer_milli(change_var, 1000, 0);
-	declareTimer_milli(check_buttons_and_overflow, 50, 1);
-	startTimer(0);
+	var, var_old = safe;
+	declareTimer(change_var, 1000, 0);
+	declareTimer(check_buttons_and_overflow, 500, 1);
 	startTimer(1);
 	
 	while(1)
 	{
-		if(eventIsSet(START))
-		{		
-			clearEvent(START);
-			while(!eventIsSet(RESET)){				
-				if(eventIsSet(VAR_CHANGED)){
-					clearEvent(VAR_CHANGED);
-					helper &= 0xF8;
-					helper |= var;
-					PORTB = helper;
-					helper = PORTB;
-					var++;
-				}
-				if (eventIsSet(OVERFLOW)){
-					clearEvent(OVERFLOW);
-					var = safe;
-				}
-			}
-			clearEvent(RESET);
-			safe = (PIND & 0x03);
-			safe |= ((PIND & 0x20) >> 3);
-			var = safe;
-			PORTB = 0x07;
-		}
+		
 	}
 }

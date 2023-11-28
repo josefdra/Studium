@@ -13,8 +13,6 @@
 #include <avr/interrupt.h>
 #include <stdlib.h>
 
-uint16_t counter_intern = 0;
-
 struct s_timer
 {
 	uint16_t duration;
@@ -33,16 +31,6 @@ void declareTimer(void (*cb)(), uint16_t d, uint8_t t_n){
 	timers[t_n].running = 0;
 }
 
-void declareTimer_milli(void (*cb)(), uint16_t d, uint8_t t_n){
-	declareTimer(cb, d, t_n);
-	timers[t_n].multiply = 1;
-}
-
-void declareTimer_mikro(void (*cb)(), uint16_t d, uint8_t t_n){
-	declareTimer(cb, d, t_n);
-	timers[t_n].multiply = 0;
-}
-
 void startTimer(uint8_t t_n){
 	timers[t_n].running = 1;
 }
@@ -51,38 +39,24 @@ void cancelTimer(uint8_t t_n){
 	timers[t_n].running = 0;
 }
 
+int timerRunning(uint8_t t_n){
+	return timers[t_n].running;
+}
+
 ISR(TIMER1_OVF_vect){
+	TCNT1 = 65285;
 	for(int i = 0; i < 5; i++){
 		if(timers[i].running == 1){
-			if(timers[i].multiply == 1){
-				counter_intern++;				
-				if(counter_intern == 1000){
-					timers[i].counter++;
-					PORTB &= 0x00;					
-					if(timers[i].counter > timers[i].duration){	
-						cli();
-						timers[i].counter = 0;
-						timers[i].running = 0;
-						
-						if (timers[i].callback!=NULL){
-							sei();
-							timers[i].callback();
-						}
-					}
-					if (counter_intern == 1000){
-						counter_intern = 0;
-					}
-				}
-			} else {
-				timers[i].counter++;	
-				if(timers[i].counter == timers[i].duration){					
-					cli();
-					timers[i].counter = 0;
-					timers[i].running = 0;
+			timers[i].counter++;
+			if(timers[i].counter > timers[i].duration){
+				cli();
+				timers[i].counter = 0;
+				timers[i].running = 0;
+				if (timers[i].callback!=NULL){
 					sei();
 					timers[i].callback();
 				}
-			}
+			} 
 		}
 	}
 }
