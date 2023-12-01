@@ -30,7 +30,6 @@
 volatile uint8_t safe;
 volatile uint8_t var;
 volatile uint8_t helper;
-volatile uint8_t var_old;
 
 
 void change_var(){
@@ -39,28 +38,27 @@ void change_var(){
 }
 
 void check_buttons_and_overflow(){	
+	
 	if(~PINC & 0x01){
-		cli();
 		cancelTimer(0);
 		safe = (PIND & 0x03);
 		safe |= ((PIND & 0x20) >> 3);
 		var = safe;
 		PORTB = 0x07;
-		sei();
+	}
+	if(var == 8){
+		var = safe;
 	}
 	if(~PIND & 0x04){
 		startTimer(0);		
 	}
-	if (timerRunning(0) && var != var_old){		
+	if (timerRunning(0)){		
 		helper &= 0xF8;
 		helper |= var;
 		PORTB = helper;
 		helper = PORTB;
-		var_old = var;		
 	}
-	if(var == 8){
-		var, var_old = safe;
-	}
+
 	startTimer(1);
 }
 
@@ -79,7 +77,7 @@ int main(void)
 	sei();
 	safe = (PIND & 0x03);
 	safe |= ((PIND & 0x20) >> 3);
-	var, var_old = safe;
+	var = safe;
 	declareTimer(change_var, 1000, 0);
 	declareTimer(check_buttons_and_overflow, 500, 1);
 	startTimer(1);

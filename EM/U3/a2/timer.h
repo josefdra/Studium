@@ -48,7 +48,7 @@ ISR(TIMER1_OVF_vect){
 	for(int i = 0; i < 5; i++){
 		if(timers[i].running == 1){
 			timers[i].counter++;
-			if(timers[i].counter > timers[i].duration){
+			if(timers[i].counter == timers[i].duration){
 				cli();
 				timers[i].counter = 0;
 				timers[i].running = 0;
