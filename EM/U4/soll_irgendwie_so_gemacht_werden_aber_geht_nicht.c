@@ -13,6 +13,7 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include <stdint.h>
+#include "util/delay.h"
 
 
 /* TTL RX - Arduino TX
@@ -21,8 +22,9 @@
 
 char ring_buffer[BUFFER_SIZE];
 uint8_t isEmpty = 1;
-uint8_t isr_iterator = 0;
-uint8_t transmit_iterator = 0;
+uint8_t rxHead = 0;
+uint8_t rxTail = 0;
+uint8_t receivedChars = 0;
 uint8_t flow_control_flag = 0;
 void USART_Init(){
 	UBRR0H = (BAUD_CONST >> 8);
@@ -30,41 +32,40 @@ void USART_Init(){
 	UCSR0B |= (1<<RXEN0)|(1<<TXEN0) | (1<<RXCIE0);
 }
 
-void USART_Transmit(){
+void USART_Transmit(unsigned char data){
 	while(!(UCSR0A & (1<<UDRE0)));
-	if (transmit_iterator < 32 && flow_control_flag/*&& !isEmpty*/){
-		UDR0 = ring_buffer[transmit_iterator];
-		transmit_iterator++;
-		if (transmit_iterator==31) {
-			transmit_iterator= 0;
-			//isEmpty = 1;
-			UDR0 = 17; //XON
-			flow_control_flag = 0;
-		}
+	if(receivedChars ==  BUFFER_SIZE && !flow_control_flag){
+		flow_control_flag = 1;
+		UDR0 = 17; //XON
+		receivedChars = 0;
 	}
-	
+	else if (receivedChars == (BUFFER_SIZE - 8) && flow_control_flag){
+		flow_control_flag = 0;
+		UDR0 = 19; //XOFF
+	}
+	UDR0 = data;	
 }
 
 unsigned char USART_Receive(){
 	while(!(UCSR0A & (1<<RXC0)));
+	if (rxTail != rxHead && flow_control_flag){
+		UDR0 = ring_buffer[rxTail];
+		rxTail = (rxTail + 1) % BUFFER_SIZE;
+		
+	}
 	return UDR0;
 }
 
 ISR(USART_RX_vect){
 	char receivedChar = UDR0;
-	dfgdg
-	if (isr_iterator < 32 /*&& isEmpty*/){
-	ring_buffer[isr_iterator] = receivedChar;
-	isr_iterator++;
+	uint8_t nextHead = (rxHead + 1) % BUFFER_SIZE;
+	
+	if (nextHead != rxTail){
+		ring_buffer[rxHead] = receivedChar;
+		rxHead = nextHead;
+		receivedChars++;
 	}
 	
-	if (isr_iterator == 31){
-		//isEmpty = 0;
-		isr_iterator = 0;
-		UDR0 = 19; //XOFF
-		flow_control_flag = 1;
-	}
-
 }
 
 int main(void)
@@ -75,6 +76,8 @@ int main(void)
 	
 	while(1)
 	{
-		USART_Transmit();
+		char d = USART_Receive();
+		USART_Transmit(d);
+		_delay_ms(200);
 	}
 }
