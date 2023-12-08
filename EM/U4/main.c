@@ -8,6 +8,7 @@
 #define F_CPU 16000000UL
 #define BAUDRATE 9600
 #define BAUD_CONST (((F_CPU/(BAUDRATE*16UL)))-1)
+#define BUFFER_SIZE 32
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
@@ -17,17 +18,29 @@
 /* TTL RX - Arduino TX
    TTL TX - Arduino RX
 */
-uint8_t ring_buffer[32];
 
+char ring_buffer[BUFFER_SIZE];
+uint8_t isEmpty = 1;
+uint8_t isr_iterator = 0;
+uint8_t transmit_iterator = 0;
+uint8_t flow_control_flag = 0;
 void USART_Init(){
 	UBRR0H = (BAUD_CONST >> 8);
 	UBRR0L = BAUD_CONST;
-	UCSR0B |= (1<<RXEN0)|(1<<TXEN0);
+	UCSR0B |= (1<<RXEN0)|(1<<TXEN0) | (1<<RXCIE0);
 }
 
-void USART_Transmit(unsigned char data){
+void USART_Transmit(){
 	while(!(UCSR0A & (1<<UDRE0)));
-	UDR0 = data;
+	if (transmit_iterator < 32 && !isEmpty){
+		UDR0 = ring_buffer[transmit_iterator];
+		transmit_iterator++;
+		if (transmit_iterator==31) {
+			transmit_iterator= 0;
+			isEmpty = 1;
+		}
+	}
+	
 }
 
 unsigned char USART_Receive(){
@@ -35,27 +48,36 @@ unsigned char USART_Receive(){
 	return UDR0;
 }
 
+ISR(USART_RX_vect){
+	char receivedChar = UDR0;
+	
+	if (isr_iterator < 32 && isEmpty){
+	ring_buffer[isr_iterator] = receivedChar;
+	isr_iterator++;
+	}
+	/*
+	if (isr_iterator == BUFFER_SIZE / 2 && !flow_control_flag){
+		UDR0 = 17;
+		flow_control_flag = 1;
+	}*/
+	if (isr_iterator == 31){
+		isEmpty = 0;
+		isr_iterator = 0;
+		//UDR0 = 19;
+		//flow_control_flag = 0;
+	}
+
+}
+
 int main(void)
 {
-	
-	char name[10];
-	int g = 0;
-	const char meldung[]="Hier ATmega. Wer da?";
+	UDR0 = 19;
+	sei();
 	USART_Init();
+	
 	
 	while(1)
 	{
-		name[g] = USART_Receive();
-		if (name[g] != 0x0d){
-			g++;
-			continue;
-		}
-		USART_Transmit(0x0d);
-		USART_Transmit('H');
-		USART_Transmit('i');
-		USART_Transmit(' ');
-		for (int f=0; f<g; f++)
-			USART_Transmit(name[f]-32);
-		g = 0;
+		USART_Transmit();
 	}
 }
