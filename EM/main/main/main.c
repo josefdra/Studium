@@ -6,86 +6,70 @@
  */
 
 #define F_CPU 16000000UL
+#define BAUDRATE 9600
+#define BAUD_CONST (((F_CPU/(BAUDRATE*16UL)))-1)
+#define BUFFER_SIZE 32
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include <stdint.h>
-#include "event.h"
-#include "timer.h"
 
-/* PORTB2 = A1
-   PORTB1 = A4
-   PORTB0 = A7
 
-   PORTD0 = A5
-   PORTD1 = A6
-   PORTD5 = A7
-   Analog A0 = A3
-   PORTD2 = A4
-   
-   Koffer nicht benutzen: 7, 17, 13
-   Koffer geht: 19
+/* TTL RX - Arduino TX
+   TTL TX - Arduino RX
 */
 
-volatile uint8_t safe;
-volatile uint8_t var;
-volatile uint8_t helper;
-volatile uint8_t var_old;
+char ring_buffer[BUFFER_SIZE] = {0};
+uint8_t rxHead = 0;
+uint8_t rxTail = 0;
+uint8_t isEmpty = 1;
+uint8_t received_chars = 0;
+uint8_t flow_control_flag = 1; //xON gesetzt
 
-
-void change_var(){
-	var++;
-	startTimer(0);
+void USART_Init(){
+	UBRR0H = (BAUD_CONST >> 8);
+	UBRR0L = BAUD_CONST;
+	UCSR0B |= (1<<RXEN0)|(1<<TXEN0) | (1<<RXCIE0);
 }
 
-void check_buttons_and_overflow(){	
-	if(~PINC & 0x01){
-		cli();
-		cancelTimer(0);
-		safe = (PIND & 0x03);
-		safe |= ((PIND & 0x20) >> 3);
-		var = safe;
-		PORTB = 0x07;
-		sei();
-	}
-	if(~PIND & 0x04){
-		startTimer(0);		
-	}
-	if (timerRunning(0) && var != var_old){		
-		helper &= 0xF8;
-		helper |= var;
-		PORTB = helper;
-		helper = PORTB;
-		var_old = var;		
-	}
-	if(var == 8){
-		var, var_old = safe;
-	}
-	startTimer(1);
+void USART_Transmit(unsigned char data){
+	cli();
+	while(!(UCSR0A & (1<<UDRE0)));
+	if(received_chars == (BUFFER_SIZE - 8))
+		UDR0 = 19;
+	else if(received_chars == 8)
+		UDR0 = 17;
+	UDR0 = data;
+	received_chars--;
+	sei();
+}
+
+unsigned char USART_Receive(){
+	cli();
+	while(!(UCSR0A & (1<<RXC0)));
+	char c = ring_buffer[rxTail];
+	rxTail = (rxTail + 1) % BUFFER_SIZE;
+	sei();
+	return c;
+}
+
+ISR(USART_RX_vect){
+	char receivedChar = UDR0;
+	uint8_t nextHead = (rxHead + 1) % BUFFER_SIZE;
+	ring_buffer[rxHead] = receivedChar;
+	rxHead = nextHead;
+	received_chars++;
 }
 
 int main(void)
 {
-	PORTD |= (1<<PORTD0)|(1<<PORTD1)|(1<<PORTD2)|(1<<PORTD5);
-	PORTC |= 0x03;
-	helper = PORTB;
-	PORTB |= 0x0F;
-	DDRC = 0x02;	
-	DDRB = 0x0F;
-	TCNT1 = 65285;
-	TCCR1B &= ~((1<<CS12)|(1<<CS11)|(1<<CS10));
-	TCCR1B |= (1<<CS11)|(1<<CS10);
-	TIMSK1 |= (1<<TOIE1);
 	sei();
-	safe = (PIND & 0x03);
-	safe |= ((PIND & 0x20) >> 3);
-	var, var_old = safe;
-	declareTimer(change_var, 1000, 0);
-	declareTimer(check_buttons_and_overflow, 500, 1);
-	startTimer(1);
+	USART_Init();
+	char d;
 	
 	while(1)
 	{
-		
+		d = USART_Receive();
+		USART_Transmit(d);
 	}
 }
