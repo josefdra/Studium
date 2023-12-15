@@ -52,7 +52,6 @@ unsigned char USART_Receive(){
 
 ISR(USART_RX_vect){
 	char receivedChar = UDR0;
-	dfgdg
 	if (isr_iterator < 32 /*&& isEmpty*/){
 	ring_buffer[isr_iterator] = receivedChar;
 	isr_iterator++;
