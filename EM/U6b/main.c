@@ -91,7 +91,7 @@ void change_state(){
 void led_control(){	
 	output = ADC;
 	dutyCycle = (((output * 1000) / 1023) * 255) / 1000;
-	OCR0B = dutyCycle;
+	OCR0B = dutyCycle; // OCR1B
 }
 
 void duty(){
@@ -114,10 +114,10 @@ ISR(TIMER1_OVF_vect){ // hinzufügen
 
 int main(void)
 {
-	TCCR0A |= (1<<WGM00)|(1<<WGM01)|(1<<COM0B1)|(1<<COM0B0);
+	TCCR0A |= (1<<WGM00)|(1<<WGM01)|(1<<COM0B1)|(1<<COM0B0); // TCCR1A |= (1<<WGM11)|(1<<WGM10)|(1<<COM1B1)|(1<<COM1B0);
 	TCCR0B |= (1<<WGM02)|(1<<CS01)|(1<<CS00);
-	OCR0A = 249;	
-	TCCR1B |= (1<<CS11)|(1<<CS10); // Prescaler von Timer 1 auch auf 64
+	OCR0A = 249; // OCR1A	
+	TCCR1B |= (1<<CS11)|(1<<CS10) /* |(1<<WGM13)|(1<<WGM12) */; // Prescaler von Timer 1 auch auf 64
 	TIMSK1 |= (1<<ICIE1); // Interrupt für Veränderung an ICP1 aktivieren
 	sei();
 	PRR &= ~(1<<PRADC);
