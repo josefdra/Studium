@@ -52,7 +52,7 @@ void temp(uint16_t var){
 	var -= 289;
 	sprintf(c, "%d", var);
 	for(int f=0; c[f] != '\0'; f++)
-	USART_Transmit(c[f]);
+		USART_Transmit(c[f]);
 	USART_Transmit('C');
 }
 
@@ -60,7 +60,7 @@ void pot(uint16_t var){
 	var *= 5;
 	sprintf(c, "%d", var);
 	for(int f=0; c[f] != '\0'; f++)
-	USART_Transmit(c[f]);
+		USART_Transmit(c[f]);
 	USART_Transmit('m');
 	USART_Transmit('V');
 }
@@ -99,7 +99,7 @@ void duty(){
 	dutyPercentage = icri / 10; // icri kann maximal den Wert 1000 annehmen was 100% entspräche
 	sprintf(c, "%d", dutyPercentage);
 	for(int f=0; c[f] != '\0'; f++)
-	USART_Transmit(c[f]);
+		USART_Transmit(c[f]);
 	USART_Transmit('%');
 }
 
@@ -134,16 +134,16 @@ int main(void)
 		led_control(); // Doppelt um den Delay anstatt von 10ms auf 5ms zu reduzieren. Notwendig?
 		setCursorPosition(1, 1);
 		for(int f=0; start[f] != '\0'; f++)
-		USART_Transmit(start[f]);
+			USART_Transmit(start[f]);
 		for(int f=0; thermo[f] != '\0'; f++)
-		USART_Transmit(thermo[f]);
+			USART_Transmit(thermo[f]);
 		change_state();
 		led_control(); // Doppelt um den Delay anstatt von 10ms auf 5ms zu reduzieren. Notwendig?
 		for(int f=0; pote[f] != '\0'; f++)
-		USART_Transmit(pote[f]);
+			USART_Transmit(pote[f]);
 		change_state();
 		for(int f=0; duty[f] != '\0'; f++)
-		USART_Transmit(duty[f]);
+			USART_Transmit(duty[f]);
 		duty();
 		clearTerminal();
 	}
