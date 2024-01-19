@@ -21,14 +21,19 @@ PD6 - OC0A
 #include <stdio.h>
 #include "uart.h"
 
-uint8_t state = 0;
+uint8_t state = 1;
 uint16_t adc;
+uint16_t icrr;
+uint16_t icrf;
 char sreg;
 uint32_t output;
 uint16_t dutyCycle;
-uint16_t icri;
-uint8_t dutyPercentage;
-char c[8];
+uint32_t icrd;
+uint32_t icrc;
+uint16_t icrro = 0;
+uint8_t duty_percentage;
+char c[80];
+char l[80];
 
 void clearTerminal() {
 	USART_Transmit('\033');
@@ -76,7 +81,7 @@ void change_state(){
 		adc = ADC;
 		temp(adc);
 		} else{
-		state = 0;
+		//state = 0;
 		ADMUX &= ~((1<<REFS1)|(1<<MUX3));
 		ADMUX |= (1<<MUX0);
 		_delay_ms(5);
@@ -91,34 +96,51 @@ void change_state(){
 void led_control(){	
 	output = ADC;
 	dutyCycle = (((output * 1000) / 1023) * 255) / 1000;
-	OCR0B = dutyCycle; // OCR1B
+	OCR0B = dutyCycle;
 }
 
 void duty(){
-	icri = 1000 - icri; // Umkehrung weil wir wissen wollen wie lange die LED leuchtet
-	dutyPercentage = icri / 10; // icri kann maximal den Wert 1000 annehmen was 100% entspräche
-	sprintf(c, "%d", dutyPercentage);
+	sprintf(c, "%d", duty_percentage);
 	for(int f=0; c[f] != '\0'; f++)
 		USART_Transmit(c[f]);
 	USART_Transmit('%');
 }
 
-ISR(TIMER1_OVF_vect){ // hinzufügen
-	sreg = SREG;
-	cli();
-	icri = ICRIL | (ICRIH<<8);
-	sei();
-	SREG = sreg;
-	TCNT1 = 0;
+ISR(TIMER1_CAPT_vect){ 
+	if (TCCR1B & (1<<ICES1)){
+		icrr = ICR1;
+	} else {
+		icrf = ICR1;
+		if (icrr < icrf){
+			icrd = icrf - icrr;
+			} else {
+			icrd = (0xFFFF - icrr) + icrf;
+		}
+		if (icrro < icrr){
+			icrc = icrr - icrro;
+			} else {
+			icrc = (0xFFFF - icrro) + icrr;
+		}
+		if (icrc == 500){
+			icrc = 250;
+		}
+		duty_percentage = 100 - ((icrd * 100) / icrc);
+		icrro = icrr;
+	}
+	TCCR1B ^= (1<<ICES1);
 }
 
 int main(void)
 {
-	TCCR0A |= (1<<WGM00)|(1<<WGM01)|(1<<COM0B1)|(1<<COM0B0); // TCCR1A |= (1<<WGM11)|(1<<WGM10)|(1<<COM1B1)|(1<<COM1B0);
+	for(int i = 0; i < 80; i++){
+		l[i] = ' ';
+	}
+	TCCR0A |= (1<<WGM00)|(1<<WGM01)|(1<<COM0B1)|(1<<COM0B0); 
 	TCCR0B |= (1<<WGM02)|(1<<CS01)|(1<<CS00);
-	OCR0A = 249; // OCR1A	
-	TCCR1B |= (1<<CS11)|(1<<CS10) /* |(1<<WGM13)|(1<<WGM12) */; // Prescaler von Timer 1 auch auf 64
-	TIMSK1 |= (1<<ICIE1); // Interrupt für Veränderung an ICP1 aktivieren
+	OCR0A = 249; 
+	TCCR1B |= (1<<CS11)|(1<<CS10);
+	TCCR1B &= ~(1<<ICES1);
+	TIMSK1 |= (1<<ICIE1); 
 	sei();
 	PRR &= ~(1<<PRADC);
 	ADCSRA |= (1<<ADEN) | (1<<ADPS2) | (1<<ADPS1)| (1<<ADPS0);
@@ -128,24 +150,35 @@ int main(void)
 	const char start[] = "Wir haben diese Werte:\n";
 	const char thermo[] = "Thermometer: ";
 	const char pote[] = "Potentiometer: ";
-	const char duty[] = "Wir haben einen Duty Cycle von: ";
+	const char duty_text[] = "Wir haben einen Duty Cycle von: ";
 	while(1)
 	{		
-		led_control(); // Doppelt um den Delay anstatt von 10ms auf 5ms zu reduzieren. Notwendig?
-		setCursorPosition(1, 1);
+		setCursorPosition(4,32);
+		USART_Transmit(' ');
+		USART_Transmit(' ');
+		USART_Transmit(' ');
+		USART_Transmit(' ');
+		USART_Transmit(' ');
+		USART_Transmit(' ');
+		USART_Transmit(' ');
+		USART_Transmit(' ');
+		USART_Transmit(' ');
+		USART_Transmit(' ');
+		led_control(); 
+		setCursorPosition(1, 1);		
 		for(int f=0; start[f] != '\0'; f++)
 			USART_Transmit(start[f]);
 		for(int f=0; thermo[f] != '\0'; f++)
-			USART_Transmit(thermo[f]);
-		change_state();
-		led_control(); // Doppelt um den Delay anstatt von 10ms auf 5ms zu reduzieren. Notwendig?
+			USART_Transmit(thermo[f]);		
+		change_state();		
 		for(int f=0; pote[f] != '\0'; f++)
-			USART_Transmit(pote[f]);
-		change_state();
-		for(int f=0; duty[f] != '\0'; f++)
-			USART_Transmit(duty[f]);
+			USART_Transmit(pote[f]);		
+		change_state();		
+		for(int f=0; duty_text[f] != '\0'; f++)
+			USART_Transmit(duty_text[f]);		
 		duty();
-		clearTerminal();
+		for(int f=0; l[f] != '\0'; f++)
+			USART_Transmit(l[f]);
 	}
 
 }
