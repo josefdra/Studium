@@ -1,5 +1,0 @@
-file run.x
-#layout regs
-target remote localhost:1234
-b mymain
-c
