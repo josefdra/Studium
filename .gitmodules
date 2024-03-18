@@ -1,0 +1,3 @@
+[submodule "ZOCK"]
+	path = ZOCK
+	url = https://github.com/josefdra/ZOCK.git
