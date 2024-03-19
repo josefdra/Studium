@@ -33,3 +33,5 @@ private:
     std::vector<int> numbers;
     std::vector<std::vector<int>> lines;
 };
+
+void three();

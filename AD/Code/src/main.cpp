@@ -2,5 +2,5 @@
 
 int main()
 {
-    two(1000000);
+    three();
 }

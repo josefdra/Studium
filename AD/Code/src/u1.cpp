@@ -217,22 +217,22 @@ Matrix::~Matrix() {}
 
 void Matrix::init()
 {
-    for (std::vector<int> line : lines)
+    for (int i = 0; i < lines.size(); i++)
     {
-        for (int number : line)
+        for (int j = 0; j < numbers.size(); j++)
         {
-            number = 0;
+            lines.at(i).at(j) = 0;
         }
     }
 }
 
 void Matrix::print()
 {
-    for (std::vector<int> line : lines)
+    for (int i = 0; i < lines.size(); i++)
     {
-        for (int number : line)
+        for (int j = 0; j < numbers.size(); j++)
         {
-            std::cout << number;
+            std::cout << lines.at(i).at(j);
         }
         std::cout << std::endl;
     }
@@ -240,9 +240,9 @@ void Matrix::print()
 
 void Matrix::input()
 {
-    for (int i = size_y; i < lines.size(); i++)
+    for (int i = 0; i < lines.size(); i++)
     {
-        for (int j = size_x; j < lines.size(); j++)
+        for (int j = 0; j < numbers.size(); j++)
         {
             std::cout << "Type value for field (" << i + 1 << ", " << j + 1 << "): ";
             std::cin >> lines.at(i).at(j);
@@ -252,11 +252,12 @@ void Matrix::input()
 
 void Matrix::randomFill()
 {
-    for (std::vector<int> line : lines)
+    for (int i = 0; i < lines.size(); i++)
     {
-        for (int number : line)
+        for (int j = 0; j < numbers.size(); j++)
         {
-            number = rand();
+            lines.at(i).at(j) = rand() % 10;
+            std::cout << lines.at(i).at(j) << std::endl;
         }
     }
 }
@@ -265,9 +266,9 @@ void Matrix::add(Matrix m)
 {
     std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
     int moves = 0;
-    for (int i = size_y; i < lines.size(); i++)
+    for (int i = 0; i < lines.size(); i++)
     {
-        for (int j = size_x; j < lines.size(); j++)
+        for (int j = 0; j < numbers.size(); j++)
         {
             lines.at(i).at(j) = lines.at(i).at(j) + m.lines.at(i).at(j);
             moves++;
@@ -288,9 +289,9 @@ void Matrix::mult(Matrix m)
         int counter = 0;
         while (counter < m.numbers.size())
         {
-            for (int i = size_y; i < lines.size(); i++)
+            for (int i = 0; i < lines.size(); i++)
             {
-                for (int j = size_x; j < lines.size(); j++)
+                for (int j = 0; j < numbers.size(); j++)
                 {
                     for (int x = numbers.size(); x >= 0; x--)
                     {
@@ -310,4 +311,12 @@ void Matrix::mult(Matrix m)
     {
         std::cout << "invalid" << std::endl;
     }
+}
+
+void three()
+{
+    Matrix m1(2, 3);
+    Matrix m2(3, 2);
+    m1.randomFill();
+    m2.randomFill();
 }
