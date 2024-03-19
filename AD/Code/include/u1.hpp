@@ -13,14 +13,14 @@ void one();
 // template <typename T, size_t N>
 // std::ostream &operator<<(std::ostream &out, const std::array<T, N> &arr);
 void erasthotenes(std::vector<int> &vec);
-void two(int n);
+void two();
 
 class Matrix
 {
 public:
     Matrix(int x, int y);
     ~Matrix();
-    void init();
+    void init(int x, int y);
     void print();
     void input();
     void randomFill();
@@ -28,8 +28,6 @@ public:
     void mult(Matrix m);
 
 private:
-    int size_x;
-    int size_y;
     std::vector<int> numbers;
     std::vector<std::vector<int>> lines;
 };

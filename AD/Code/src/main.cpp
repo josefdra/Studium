@@ -2,5 +2,7 @@
 
 int main()
 {
+    one();
+    two();
     three();
 }

@@ -142,6 +142,7 @@ void one()
         for (int j = 30; j < 41; j++)
         {
             x = ggt(i, j);
+            // x = ggt_rek(i, j);
             y = kgV(i, j);
             z = i * j;
             std::cout << "i: " << i << ", j: " << j << ", ggt: " << x << ", kgV: " << y << ", z: " << z << std::endl;
@@ -205,24 +206,29 @@ void erasthotenes(std::vector<int> &vec)
     std::cout << "Duration: " << duration.count() << std::endl;
 }
 
-void two(int n)
+void two()
 {
+    int n = 10000;
     std::vector<int> tab(n);
     std::iota(tab.begin(), tab.end(), 1);
     erasthotenes(tab);
 }
 
-Matrix::Matrix(int x, int y) : size_x(x), size_y(y), numbers(std::vector<int>(x)), lines(std::vector<std::vector<int>>(y)) {}
+Matrix::Matrix(int x, int y)
+{
+    init(x, y);
+}
 Matrix::~Matrix() {}
 
-void Matrix::init()
+void Matrix::init(int x, int y)
 {
-    for (int i = 0; i < lines.size(); i++)
+    for (int i = 0; i < x; i++)
     {
-        for (int j = 0; j < numbers.size(); j++)
-        {
-            lines.at(i).at(j) = 0;
-        }
+        numbers.push_back(0);
+    }
+    for (int i = 0; i < y; i++)
+    {
+        lines.push_back(numbers);
     }
 }
 
@@ -232,10 +238,11 @@ void Matrix::print()
     {
         for (int j = 0; j < numbers.size(); j++)
         {
-            std::cout << lines.at(i).at(j);
+            std::cout << lines.at(i).at(j) << " ";
         }
         std::cout << std::endl;
     }
+    std::cout << std::endl;
 }
 
 void Matrix::input()
@@ -248,6 +255,7 @@ void Matrix::input()
             std::cin >> lines.at(i).at(j);
         }
     }
+    std::cout << std::endl;
 }
 
 void Matrix::randomFill()
@@ -256,8 +264,7 @@ void Matrix::randomFill()
     {
         for (int j = 0; j < numbers.size(); j++)
         {
-            lines.at(i).at(j) = rand() % 10;
-            std::cout << lines.at(i).at(j) << std::endl;
+            lines.at(i).at(j) = rand() % 100;
         }
     }
 }
@@ -276,47 +283,62 @@ void Matrix::add(Matrix m)
     }
     std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = end - start;
-    std::cout << "Moves: " << moves << "Duration: " << duration.count() << std::endl;
+    std::cout << "Moves: " << moves << ", Duration: " << duration.count() << "s" << std::endl;
+    std::cout << std::endl;
 }
 
 void Matrix::mult(Matrix m)
 {
     std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
-    int moves = 0;
+    unsigned long int moves = 0;
     if (numbers.size() == m.lines.size())
     {
-        int temp;
-        int counter = 0;
-        while (counter < m.numbers.size())
+        Matrix temp(m.numbers.size(), lines.size());
+        for (int counter = 0; counter < m.numbers.size(); counter++)
         {
             for (int i = 0; i < lines.size(); i++)
             {
                 for (int j = 0; j < numbers.size(); j++)
                 {
-                    for (int x = numbers.size(); x >= 0; x--)
-                    {
-                        temp += lines.at(i).at(x) * m.lines.at(counter).at(x);
-                        moves++;
-                    }
-                    lines.at(i).at(j) = temp;
+                    temp.lines.at(i).at(counter) += lines.at(i).at(j) * m.lines.at(j).at(counter);
+                    moves++;
                 }
             }
-            counter++;
         }
+        numbers = temp.numbers;
+        lines = temp.lines;
         std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> duration = end - start;
-        std::cout << "Moves: " << moves << "Duration: " << duration.count() << std::endl;
+        std::cout << "Moves: " << moves << ", Duration: " << duration.count() << "s" << std::endl;
+        std::cout << std::endl;
     }
     else
     {
         std::cout << "invalid" << std::endl;
+        std::cout << std::endl;
     }
 }
 
 void three()
 {
-    Matrix m1(2, 3);
-    Matrix m2(3, 2);
+    int x = 100;
+    Matrix m1(x, x);
+    Matrix m2(x, x);
     m1.randomFill();
     m2.randomFill();
+    m2.add(m2);
+    m1.mult(m2);
+    m1.print();
 }
+
+/*
+Addition 1min:
+Addition 2min:
+Addition 5min:
+Addition 10min:
+
+Multiplikation 1min: (1135x1135) Moves: 1462135375, Duration: 59.5013s
+Multiplikation 2min: (1420x1420) Moves: 2863288000, Duration: 120.004s
+Multiplikation 5min: (1851x1851) Moves: 2046930755, Duration: 299.324s
+Multiplikation 10min: (2301x2301) Moves: 3592942309, Duration: 599.701s
+*/
