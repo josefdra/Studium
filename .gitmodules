@@ -1,3 +1,9 @@
 [submodule "ZOCK"]
 	path = ZOCK
 	url = https://github.com/josefdra/ZOCK.git
+[submodule "reversixt-ss2024"]
+	path = reversixt-ss2024
+	url = https://gitlab.oth-regensburg.de/kec39902/reversixt-ss2024.git
+[submodule "revxt-ss24-g01"]
+	path = revxt-ss24-g01
+	url = https://gitlab.oth-regensburg.de/kec39902/revxt-ss24-g01.git
