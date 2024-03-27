@@ -1,8 +1,6 @@
-#include "u1.hpp"
+#include "u2.hpp"
 
 int main()
 {
-    one();
-    two();
-    three();
+    one("..\\files\\register_machine.txt");
 }

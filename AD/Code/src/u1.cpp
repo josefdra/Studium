@@ -1,3 +1,5 @@
+/*
+
 #include "u1.hpp"
 
 void ggt()
@@ -208,19 +210,19 @@ void erasthotenes(std::vector<int> &vec)
 
 void two()
 {
-    int n = 10000;
+    int n = 100000;
     std::vector<int> tab(n);
     std::iota(tab.begin(), tab.end(), 1);
     erasthotenes(tab);
 }
 
-Matrix::Matrix(int x, int y)
+Matrix::Matrix(double x, double y)
 {
     init(x, y);
 }
 Matrix::~Matrix() {}
 
-void Matrix::init(int x, int y)
+void Matrix::init(double x, double y)
 {
     for (int i = 0; i < x; i++)
     {
@@ -293,24 +295,47 @@ void Matrix::mult(Matrix m)
     unsigned long int moves = 0;
     if (numbers.size() == m.lines.size())
     {
-        Matrix temp(m.numbers.size(), lines.size());
-        for (int counter = 0; counter < m.numbers.size(); counter++)
+        const int n = numbers.size();
+        Matrix temp(n, n);
+
+        // Optimierte Schleifenstruktur
+        for (int i = 0; i < n; i += 8)
         {
-            for (int i = 0; i < lines.size(); i++)
+            for (int j = 0; j < n; j += 8)
             {
-                for (int j = 0; j < numbers.size(); j++)
+                for (int k = 0; k < n; k += 8)
                 {
-                    temp.lines.at(i).at(counter) += lines.at(i).at(j) * m.lines.at(j).at(counter);
-                    moves++;
+                    __m256d a1, a2, b1, b2, c1, c2, d1, d2;
+
+                    // Vektorisierung mit SIMD-Intrinsics
+                    for (int l = 0; l < 8 && i + l < n && j + 4 < n && k + 4 < n; ++l)
+                    {
+                        // Datentyp der Zeiger auf "double" geändert
+                        double *ptr_lines_i_j = &lines.at(i + l).at(j);
+                        double *ptr_lines_i_j_4 = &lines.at(i + l).at(j + 4);
+                        double *ptr_m_lines_k_j = &m.lines.at(k).at(j);
+                        double *ptr_m_lines_k_j_4 = &m.lines.at(k).at(j + 4);
+                        double *ptr_temp_lines_i_l_k = &temp.lines.at(i + l).at(k);
+                        double *ptr_temp_lines_i_l_k_4 = &temp.lines.at(i + l).at(k + 4);
+
+                        a1 = _mm256_loadu_pd(ptr_lines_i_j);
+                        a2 = _mm256_loadu_pd(ptr_lines_i_j_4);
+                        b1 = _mm256_loadu_pd(ptr_m_lines_k_j);
+                        b2 = _mm256_loadu_pd(ptr_m_lines_k_j_4);
+
+                        c1 = _mm256_mul_pd(a1, b1);
+                        c2 = _mm256_mul_pd(a2, b2);
+                        d1 = _mm256_add_pd(c1, _mm256_loadu_pd(ptr_temp_lines_i_l_k));
+                        d2 = _mm256_add_pd(c2, _mm256_loadu_pd(ptr_temp_lines_i_l_k_4));
+
+                        _mm256_storeu_pd(ptr_temp_lines_i_l_k, d1);
+                        _mm256_storeu_pd(ptr_temp_lines_i_l_k_4, d2);
+                    }
                 }
             }
         }
         numbers = temp.numbers;
         lines = temp.lines;
-        std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> duration = end - start;
-        std::cout << "Moves: " << moves << ", Duration: " << duration.count() << "s" << std::endl;
-        std::cout << std::endl;
     }
     else
     {
@@ -321,17 +346,15 @@ void Matrix::mult(Matrix m)
 
 void three()
 {
-    int x = 100;
+    int x = 1135;
     Matrix m1(x, x);
     Matrix m2(x, x);
     m1.randomFill();
     m2.randomFill();
-    m2.add(m2);
     m1.mult(m2);
-    m1.print();
 }
 
-/*
+
 Addition 1min:
 Addition 2min:
 Addition 5min:

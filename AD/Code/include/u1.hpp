@@ -2,6 +2,7 @@
 #include <vector>
 #include <numeric>
 #include <chrono>
+#include <immintrin.h>
 
 void ggt();
 int ggt(int a, int b);
@@ -18,9 +19,9 @@ void two();
 class Matrix
 {
 public:
-    Matrix(int x, int y);
+    Matrix(double x, double y);
     ~Matrix();
-    void init(int x, int y);
+    void init(double x, double y);
     void print();
     void input();
     void randomFill();
@@ -28,8 +29,8 @@ public:
     void mult(Matrix m);
 
 private:
-    std::vector<int> numbers;
-    std::vector<std::vector<int>> lines;
+    std::vector<double> numbers;
+    std::vector<std::vector<double>> lines;
 };
 
 void three();
