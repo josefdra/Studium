@@ -2,5 +2,5 @@
 
 int main()
 {
-    one("..\\files\\register_machine.txt");
+    run("..\\files\\register_machine.txt");
 }
