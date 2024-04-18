@@ -1,3 +1,6 @@
+#ifndef U1_HPP
+#define U1_HPP
+
 #include <iostream>
 #include <vector>
 #include <numeric>
@@ -34,3 +37,5 @@ private:
 };
 
 void three();
+
+#endif // U1_HPP
