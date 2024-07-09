@@ -14,3 +14,6 @@ Statistik:
 
 https://share.goodnotes.com/s/KBGW0D1RExAqrblAADAvCk      
 https://share.goodnotes.com/s/v7D5J54yQXYATuug4yP6KI
+
+AD Cheatsheet:
+https://share.goodnotes.com/s/AIfOfaCIPjBHwXUiV0FMNv
