@@ -1,0 +1,77 @@
+travelTies
+
+Abstrakt: 9 / 10
+
+Das Abstrakt des Projektberichts ist sehr gut strukturiert, klar und umfassend. 
+Es beschreibt den Status quo, das zu lösende Problem und den Lösungsansatz detailliert und verständlich. 
+Die Szenarien ohne und mit dem Produkt verdeutlichen den Mehrwert der App sehr anschaulich.
+
+Einführung des Problems:
+
+	Das Problem wird prägnant und klar beschrieben. 
+	Es ist sofort ersichtlich, warum die App benötigt wird und welche Lücke sie füllt.
+	
+Beschreibung der App:
+
+	Die Funktionen der App werden ausführlich und verständlich erklärt. 
+	Besonders die Integration von Reiseplanung, Buchung und Partnersuche in einer Plattform wird gut hervorgehoben.
+	
+Szenarien:
+
+	Die Szenarien sind anschaulich und helfen, die Vorteile der App deutlich zu machen. 
+	Sie sind detailliert genug, um die Problematik und die Lösung nachvollziehbar darzustellen.
+	
+Grammatik und Stil:
+
+	Der Text ist größtenteils fehlerfrei und gut lesbar. 
+	Es gibt nur wenige sprachliche Unebenheiten, die den Lesefluss kaum beeinträchtigen.
+	
+	
+Komponentendiagramm: 9 / 10
+
+	Richtlinienkonformität:
+
+		Komponenten: Komponenten werden korrekt als <<component>> gekennzeichnet und beinhalten verschiedene Module wie Frontend, Backend, Datenbankmanagement usw.
+		Ports und Interfaces: Die Verwendung von Ports und Interfaces (z.B., Anfrage, Buchung, Zahlung) zur Darstellung der Interaktionen zwischen den Komponenten entspricht den UML 2.0 Standards.
+		Delegation: Die Verwendung von Delegation (z.B., <<delegate>>) zeigt die Weiterleitung von Anfragen an spezialisierte Komponenten, was eine gute Praxis in der Komponentenmodellierung ist.
+			
+
+Verteilungsdiagramm: 9 / 10
+
+	Richtlinienkonformität:
+
+		Devices: Die Darstellung von "Devices" (z.B., Mobile Device, Backend Server, Datenbank Server, Admin Server) entspricht UML 2.0 Standards.
+		Execution Environments: Diese werden korrekt als <<execution environment>> gekennzeichnet und beinhalten spezifische Details wie CPU, RAM, SSD usw.
+		Artifacts: Softwarekomponenten sind als <<artifact>> gekennzeichnet (z.B., Chat.jar, Bewertung.jar, API.jar).
+		Kommunikation: Die Kommunikation zwischen den Komponenten wird durch <<http request>> und <<ethernet>> Verbindungen dargestellt, was gängigen UML 2.0 Praktiken entspricht.	
+		
+	Mögliche Änderungen:
+	
+		Mobile Device:
+			Die Richtlinien und die .jar-Dateien sollten als separate <<artifact>>-Elemente außerhalb des <<execution environment>>-Blocks dargestellt werden, 
+			um klar zu machen, dass diese Artefakte von der Umgebung bereitgestellt werden.
+			
+		Datenbank Server:
+			Es ist unklar, welche Komponenten explizit als <<artifact>> auf dem Datenbank Server laufen. 
+			Der Datenbankserver sollte eine klare Trennung zwischen <<execution environment>> und <<artifact>> aufweisen.
+	
+	
+Fazit: 9 / 10
+
+Das Fazit des Projektberichts ist klar strukturiert und gibt einen umfassenden Überblick über den aktuellen Stand der App sowie zukünftige Erweiterungen. 
+Es hebt sowohl die erreichten Erfolge als auch die geplanten Verbesserungen deutlich hervor.
+
+Erreichte Ziele:
+
+Das Fazit beschreibt gut, welche Funktionen die App bereits erfolgreich integriert hat und welchen Mehrwert sie den Nutzern bietet. 
+
+Zukünftige Erweiterungen:
+
+Die geplanten Erweiterungen sind klar und präzise beschrieben. 
+Besonders die personalisierten Reiseempfehlungen und die Integration von Aktivitäten und Sehenswürdigkeiten werden detailliert erläutert, 
+was den Leser über die zukünftige Ausrichtung der App informiert.
+
+Verbesserungsvorschläge:
+
+	Grammatik und Stil:	
+		Es gibt ein paar wenige sprachliche Unebenheiten, die den Lesefluss kaum beeinträchtigen.

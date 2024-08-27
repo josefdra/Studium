@@ -1,0 +1,74 @@
+SaveMoneySmart
+
+Abstrakt: 8 / 10
+
+Einführung des Problems:
+
+	Der Einstieg ist klar, aber könnte noch prägnanter formuliert werden, 
+	um sofort das Interesse des Lesers zu wecken.
+
+Beschreibung der App:
+
+	Die Funktionen der App werden gut dargestellt, könnten aber noch detaillierter beschrieben werden, 
+	insbesondere wie die personalisierten Tipps genau funktionieren.
+
+Szenarien:
+
+	Die Szenarien sind anschaulich und helfen, den Mehrwert der App zu verdeutlichen. 
+	Sie könnten jedoch etwas kürzer und prägnanter formuliert werden, um die wesentlichen Punkte schneller auf den Punkt zu bringen.
+	
+Grammatik und Stil:
+
+	Es gibt einige sprachliche Unebenheiten und Wiederholungen, die den Lesefluss beeinträchtigen. 	
+	
+	
+Komponentendiagramm: 7 / 10
+
+	Minuspunkt: 
+		nicht lesbar
+		
+	Komponenten und Interfaces:
+		Es wäre hilfreich, explizit Interfaces zu den Komponenten darzustellen, 
+		um die Schnittstellen zwischen den Komponenten und die von ihnen angebotenen und genutzten Services klar zu definieren.
+		
+	Abhängigkeiten und Kommunikation:
+		Die Verwendung von Stereotypen und Notationen zur genaueren Darstellung der Art der Abhängigkeiten (z.B. Datenfluss, Kontrollfluss) wäre hilfreich.
+	
+
+Verteilungsdiagramm: 8 / 10
+	
+	Hardware-Spezifikationen:
+		Zusätzliche Details zu den Hardware-Spezifikationen der Knoten könnten hinzugefügt werden, um die Skalierbarkeit und Performance-Aspekte besser zu verstehen.
+	
+	Redundanz und Fehlertoleranz:
+		Informationen zur Redundanz und Fehlertoleranz der Hardwarekomponenten und Kommunikationspfade sollten integriert werden, um die Robustheit des Systems besser darzustellen.
+	
+	
+Fazit: 8 / 10
+
+Das Fazit des Projektberichts ist gut strukturiert und klar verständlich. 
+Es hebt die Bedeutung der App, das Potenzial zur Verbesserung und die zukünftigen Erweiterungen hervor.
+
+Erreichtes Potenzial:
+
+	Das Fazit beschreibt gut, dass die App ein breites Publikum ansprechen kann, 
+	da finanzielle Bildung zunehmend wichtig wird und viele Menschen Zeit am Handy verbringen.
+
+Zukünftige Erweiterungen:
+
+	Die geplanten Erweiterungen, wie personalisierte Tipps basierend auf dem Standort des Nutzers und erweiterte Community-Features, 
+	sind gut erläutert. Die Erwähnung der Verbesserung der Feedback-Möglichkeiten zeigt, dass auf Nutzerwünsche eingegangen wird.
+	
+Datenschutz und Prioritäten:
+
+	Die Betonung auf den Datenschutz bei der Verwendung des GPS-Sensors und die kontinuierliche Wartung und Weiterentwicklung der App sind wichtige Punkte, 
+	die Vertrauen schaffen.
+	
+Verbesserungsvorschläge:
+
+	Grammatik und Stil:
+		Es gibt einige sprachliche Unebenheiten und kleinere Fehler (z.B. "beziehungsweide" statt "beziehungsweise"), 
+		die den Lesefluss beeinträchtigen.
+		
+	Konkretisierung der Erfolgsmetriken:
+		Konkretere Angaben über den aktuellen Stand der App (z.B. Anzahl der Nutzer, Feedback der Testnutzer) könnten die erreichten Ziele besser veranschaulichen.
